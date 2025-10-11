@@ -1,0 +1,522 @@
+{
+  "sectors": [
+    {
+      "id": "s1",
+      "name": "Finance",
+      "description": "Financial planning, investment, and corporate finance careers."
+    },
+    {
+      "id": "s2",
+      "name": "Information Technology",
+      "description": "Technology and software development careers driving digital innovation."
+    },
+    {
+      "id": "s3",
+      "name": "Engineering",
+      "description": "Mechanical, civil, and electrical engineering disciplines shaping infrastructure and technology."
+    },
+    {
+      "id": "s4",
+      "name": "Nursing",
+      "description": "Healthcare and medical support professions focused on patient wellbeing."
+    }
+  ],
+
+  "careers": [
+    {
+      "id": "c1",
+      "name": "Financial Analyst",
+      "sector_id": "s1",
+      "overview": "Evaluate investments and support financial decision-making through analytical modeling.",
+      "average_salary": 720000,
+      "job_outlook": "Steady growth driven by corporate analytics.",
+      "duration_years": 4
+    },
+    {
+      "id": "c2",
+      "name": "Investment Banker",
+      "sector_id": "s1",
+      "overview": "Manage mergers, acquisitions, and capital market deals.",
+      "average_salary": 1200000,
+      "job_outlook": "High earning potential, highly competitive.",
+      "duration_years": 5
+    },
+    {
+      "id": "c3",
+      "name": "Financial Planner",
+      "sector_id": "s1",
+      "overview": "Guide clients in achieving long-term financial stability and independence.",
+      "average_salary": 700000,
+      "job_outlook": "Growing demand for personalized financial advice.",
+      "duration_years": 4
+    },
+    {
+      "id": "c4",
+      "name": "Software Engineer",
+      "sector_id": "s2",
+      "overview": "Design, develop, and maintain applications that power modern software systems.",
+      "average_salary": 900000,
+      "job_outlook": "Strong growth across all digital industries.",
+      "duration_years": 4
+    },
+    {
+      "id": "c5",
+      "name": "Data Analyst",
+      "sector_id": "s2",
+      "overview": "Collect, process, and analyze data to produce actionable insights.",
+      "average_salary": 680000,
+      "job_outlook": "Rapid growth driven by data-driven decision making.",
+      "duration_years": 3
+    },
+    {
+      "id": "c6",
+      "name": "Cybersecurity Specialist",
+      "sector_id": "s2",
+      "overview": "Protect systems and networks from digital attacks and breaches.",
+      "average_salary": 950000,
+      "job_outlook": "One of the fastest-growing technology fields.",
+      "duration_years": 4
+    },
+    {
+      "id": "c7",
+      "name": "Mechanical Engineer",
+      "sector_id": "s3",
+      "overview": "Design, develop, and build mechanical systems and devices.",
+      "average_salary": 800000,
+      "job_outlook": "Solid demand in manufacturing and automation.",
+      "duration_years": 5
+    },
+    {
+      "id": "c8",
+      "name": "Civil Engineer",
+      "sector_id": "s3",
+      "overview": "Plan and design essential infrastructure projects such as roads, bridges, and buildings.",
+      "average_salary": 780000,
+      "job_outlook": "Consistent demand in public and private sectors.",
+      "duration_years": 5
+    },
+    {
+      "id": "c9",
+      "name": "Electrical Engineer",
+      "sector_id": "s3",
+      "overview": "Develop and maintain electrical and electronic systems.",
+      "average_salary": 850000,
+      "job_outlook": "Strong growth in renewable energy and robotics.",
+      "duration_years": 5
+    },
+    {
+      "id": "c10",
+      "name": "Registered Nurse",
+      "sector_id": "s4",
+      "overview": "Provide care, support, and health education to patients in clinical settings.",
+      "average_salary": 750000,
+      "job_outlook": "High global demand across all healthcare systems.",
+      "duration_years": 4
+    },
+    {
+      "id": "c11",
+      "name": "Nurse Practitioner",
+      "sector_id": "s4",
+      "overview": "Diagnose and manage patients with advanced nursing autonomy.",
+      "average_salary": 1150000,
+      "job_outlook": "Strong demand in both private and public health sectors.",
+      "duration_years": 6
+    },
+    {
+      "id": "c12",
+      "name": "Public Health Nurse",
+      "sector_id": "s4",
+      "overview": "Work in community and outreach programs promoting preventive health.",
+      "average_salary": 800000,
+      "job_outlook": "Growing focus on preventive healthcare initiatives.",
+      "duration_years": 4
+    },
+
+
+    {
+      "id": "c13",
+      "name": "Risk Manager",
+      "sector_id": "s1",
+      "overview": "Identify, assess and mitigate financial risks across investments and operations.",
+      "average_salary": 950000,
+      "job_outlook": "Growing emphasis on risk quantification and regulatory compliance.",
+      "duration_years": 5
+    },
+    {
+      "id": "c14",
+      "name": "Actuary",
+      "sector_id": "s1",
+      "overview": "Use mathematics and statistics to model financial risk and design insurance products.",
+      "average_salary": 1400000,
+      "job_outlook": "Strong demand in insurance, pensions, and risk analytics.",
+      "duration_years": 6
+    },
+    {
+      "id": "c15",
+      "name": "Cloud Architect",
+      "sector_id": "s2",
+      "overview": "Design and operate scalable cloud solutions and platforms for modern applications.",
+      "average_salary": 1300000,
+      "job_outlook": "Very strong demand as organizations migrate to cloud-first architectures.",
+      "duration_years": 5
+    },
+    {
+      "id": "c16",
+      "name": "AI Engineer",
+      "sector_id": "s2",
+      "overview": "Build and deploy machine learning models and production AI systems.",
+      "average_salary": 1500000,
+      "job_outlook": "Rapid growth, high demand for applied ML engineers.",
+      "duration_years": 5
+    },
+    {
+      "id": "c17",
+      "name": "Industrial Engineer",
+      "sector_id": "s3",
+      "overview": "Optimize complex processes, systems, and supply chains for efficiency and productivity.",
+      "average_salary": 820000,
+      "job_outlook": "Stable demand in manufacturing, logistics and operations.",
+      "duration_years": 5
+    },
+    {
+      "id": "c18",
+      "name": "Environmental Engineer",
+      "sector_id": "s3",
+      "overview": "Design solutions to environmental challenges: water, waste, remediation and sustainability.",
+      "average_salary": 780000,
+      "job_outlook": "Growing demand for sustainability and environmental compliance roles.",
+      "duration_years": 5
+    },
+    {
+      "id": "c19",
+      "name": "Critical Care Nurse",
+      "sector_id": "s4",
+      "overview": "Provide acute, high-dependency care for critically ill patients in ICU settings.",
+      "average_salary": 920000,
+      "job_outlook": "Strong need in hospitals with increasing specialization.",
+      "duration_years": 5
+    },
+    {
+      "id": "c20",
+      "name": "Nurse Educator",
+      "sector_id": "s4",
+      "overview": "Teach and mentor the next generation of nurses; design curricula and clinical training.",
+      "average_salary": 880000,
+      "job_outlook": "Growing demand for nurse educators to support workforce expansion.",
+      "duration_years": 6
+    }
+  ],
+
+  "education": [
+    {
+      "id": "ed1",
+      "name": "Bachelor of Finance",
+      "description": "Undergraduate degree covering financial management, accounting, and investment principles.",
+      "nqf_level": 7,
+      "duration_years": 4,
+      "career_ids": ["c1", "c2", "c3"]
+    },
+    {
+      "id": "ed2",
+      "name": "Master of Business Administration",
+      "description": "Postgraduate program emphasizing corporate leadership and strategy.",
+      "nqf_level": 9,
+      "duration_years": 2,
+      "career_ids": ["c1", "c2"]
+    },
+    {
+      "id": "ed3",
+      "name": "Bachelor of Computer Science",
+      "description": "Core foundation for programming, systems design, and algorithms.",
+      "nqf_level": 7,
+      "duration_years": 4,
+      "career_ids": ["c4", "c5", "c6"]
+    },
+    {
+      "id": "ed4",
+      "name": "Bachelor of Engineering",
+      "description": "Comprehensive degree in engineering design and theory.",
+      "nqf_level": 8,
+      "duration_years": 5,
+      "career_ids": ["c7", "c8", "c9"]
+    },
+    {
+      "id": "ed5",
+      "name": "Bachelor of Nursing",
+      "description": "Prepares students for registered nursing practice in clinical settings.",
+      "nqf_level": 7,
+      "duration_years": 4,
+      "career_ids": ["c10", "c12"]
+    },
+    {
+      "id": "ed6",
+      "name": "Master of Nursing Practice",
+      "description": "Advanced nursing program for specialized clinical care.",
+      "nqf_level": 9,
+      "duration_years": 6,
+      "career_ids": ["c11"]
+    },
+
+
+
+    {
+      "id": "ed7",
+      "name": "BSc Actuarial Science",
+      "description": "Mathematics, statistics and finance focused degree for actuarial careers.",
+      "nqf_level": 8,
+      "duration_years": 4,
+      "career_ids": ["c14"]
+    },
+    {
+      "id": "ed8",
+      "name": "Diploma in Risk Management",
+      "description": "Practical coursework in risk frameworks, compliance and quantitative risk assessment.",
+      "nqf_level": 7,
+      "duration_years": 2,
+      "career_ids": ["c13"]
+    },
+    {
+      "id": "ed9",
+      "name": "BSc Cloud Computing / DevOps",
+      "description": "Cloud architectures, distributed systems and DevOps practices.",
+      "nqf_level": 7,
+      "duration_years": 4,
+      "career_ids": ["c15"]
+    },
+    {
+      "id": "ed10",
+      "name": "MSc Machine Learning",
+      "description": "Advanced machine learning, deep learning and deployment of AI systems.",
+      "nqf_level": 9,
+      "duration_years": 2,
+      "career_ids": ["c16"]
+    },
+    {
+      "id": "ed11",
+      "name": "BEng Industrial Engineering",
+      "description": "Optimize processes and systems with engineering and operations research tools.",
+      "nqf_level": 8,
+      "duration_years": 5,
+      "career_ids": ["c17"]
+    },
+    {
+      "id": "ed12",
+      "name": "BEng Environmental Engineering",
+      "description": "Environmental systems, water and waste management, and remediation techniques.",
+      "nqf_level": 8,
+      "duration_years": 5,
+      "career_ids": ["c18"]
+    },
+    {
+      "id": "ed13",
+      "name": "Postgraduate Diploma: Critical Care Nursing",
+      "description": "Advanced clinical training for ICU and high-dependency nursing practice.",
+      "nqf_level": 9,
+      "duration_years": 1,
+      "career_ids": ["c19"]
+    },
+    {
+      "id": "ed14",
+      "name": "MEd / Postgrad Diploma in Nursing Education",
+      "description": "Pedagogy, curriculum design and clinical teaching for nurse educators.",
+      "nqf_level": 9,
+      "duration_years": 2,
+      "career_ids": ["c20"]
+    }
+  ],
+
+  "skills": [
+    { "id": "sk1", "name": "Financial Modeling", "description": "Analyze company performance using spreadsheets and valuation techniques.", "career_ids": ["c1", "c2", "c3"] },
+    { "id": "sk2", "name": "Python Programming", "description": "Develop applications, perform automation, and analyze data.", "career_ids": ["c4", "c5", "c6"] },
+    { "id": "sk3", "name": "Data Visualization", "description": "Present data insights using dashboards and reports.", "career_ids": ["c5"] },
+    { "id": "sk4", "name": "Cybersecurity Fundamentals", "description": "Identify vulnerabilities and implement secure systems.", "career_ids": ["c6"] },
+    { "id": "sk5", "name": "Project Management", "description": "Plan, organize, and lead projects effectively.", "career_ids": ["c7", "c8", "c9"] },
+    { "id": "sk6", "name": "AutoCAD", "description": "Design and simulate engineering structures and systems.", "career_ids": ["c7", "c8", "c9"] },
+    { "id": "sk7", "name": "Clinical Care", "description": "Deliver evidence-based nursing care and interventions.", "career_ids": ["c10", "c11", "c12"] },
+    { "id": "sk8", "name": "Patient Communication", "description": "Effectively engage with patients and healthcare teams.", "career_ids": ["c10", "c11", "c12"] },
+
+    
+
+    { "id": "sk9", "name": "Risk Quantification", "description": "Model financial risk with statistical techniques and stress testing.", "career_ids": ["c13", "c14"] },
+    { "id": "sk10", "name": "Actuarial Modeling", "description": "Life contingencies, pricing and reserving techniques.", "career_ids": ["c14"] },
+    { "id": "sk11", "name": "Cloud Architecture", "description": "Design cloud platforms, IaC and multi-cloud strategies.", "career_ids": ["c15"] },
+    { "id": "sk12", "name": "MLOps & Model Deployment", "description": "Productionize ML models, monitoring and data pipelines.", "career_ids": ["c16"] },
+    { "id": "sk13", "name": "Lean Manufacturing", "description": "Process optimization and waste reduction techniques.", "career_ids": ["c17"] },
+    { "id": "sk14", "name": "Environmental Impact Assessment", "description": "Assess and mitigate environmental effects in projects.", "career_ids": ["c18"] },
+    { "id": "sk15", "name": "Advanced Life Support (ALS)", "description": "Critical care procedures and monitoring for ICU nursing.", "career_ids": ["c19"] },
+    { "id": "sk16", "name": "Clinical Teaching & Assessment", "description": "Educational methods for clinical practice and assessment.", "career_ids": ["c20"] }
+  ],
+
+  "specializations": [
+    { "id": "sp1", "career_id": "c4", "name": "Frontend Developer", "description": "Specialize in building interactive web interfaces using modern frameworks." },
+    { "id": "sp2", "career_id": "c4", "name": "Backend Developer", "description": "Design scalable backend systems and APIs." },
+    { "id": "sp3", "career_id": "c5", "name": "Business Data Analyst", "description": "Focus on business intelligence and data-driven strategy." },
+    { "id": "sp4", "career_id": "c6", "name": "Penetration Tester", "description": "Simulate cyber attacks to evaluate system security." },
+    { "id": "sp5", "career_id": "c7", "name": "Robotics Engineer", "description": "Design autonomous mechanical systems and robots." },
+    { "id": "sp6", "career_id": "c8", "name": "Structural Engineer", "description": "Specialize in bridge and building design." },
+    { "id": "sp7", "career_id": "c9", "name": "Power Systems Engineer", "description": "Work on large-scale power generation and distribution systems." },
+    { "id": "sp8", "career_id": "c11", "name": "Pediatric Nurse Practitioner", "description": "Provide healthcare to infants, children, and adolescents." },
+    { "id": "sp9", "career_id": "c12", "name": "Community Health Coordinator", "description": "Lead health education and outreach programs." },
+
+
+
+    { "id": "sp10", "career_id": "c13", "name": "Enterprise Risk Specialist", "description": "Focus on enterprise-wide risk frameworks and governance." },
+    { "id": "sp11", "career_id": "c14", "name": "Pension & Life Actuary", "description": "Specialize in pensions, life insurance and longevity risk." },
+    { "id": "sp12", "career_id": "c15", "name": "Cloud Security Architect", "description": "Design secure cloud infrastructures and controls." },
+    { "id": "sp13", "career_id": "c16", "name": "Computer Vision Specialist", "description": "Focus on ML for image/video systems and perception." },
+    { "id": "sp14", "career_id": "c17", "name": "Supply Chain Systems", "description": "Specialize in end-to-end supply-chain optimization." },
+    { "id": "sp15", "career_id": "c18", "name": "Water Resources Specialist", "description": "Design systems for sustainable water management." },
+    { "id": "sp16", "career_id": "c19", "name": "Trauma & ICU Specialist", "description": "Advanced critical care specialization in trauma and ICU." },
+    { "id": "sp17", "career_id": "c20", "name": "Simulation-Based Educator", "description": "Design simulation and OSCE-based clinical training." }
+  ],
+
+  "roadmaps": [
+    {
+      "id": "r1",
+      "career_id": "c1",
+      "description": "Develop strong analytical and financial modeling skills with real-world experience.",
+      "education_ids": ["ed1"],
+      "skill_ids": ["sk1"],
+      "specialization_ids": []
+    },
+    {
+      "id": "r2",
+      "career_id": "c4",
+      "description": "Master software development principles and specialize in full-stack or backend systems.",
+      "education_ids": ["ed3"],
+      "skill_ids": ["sk2"],
+      "specialization_ids": ["sp1", "sp2"]
+    },
+    {
+      "id": "r3",
+      "career_id": "c5",
+      "description": "Build analytical and visualization skills to drive business decisions.",
+      "education_ids": ["ed3"],
+      "skill_ids": ["sk2", "sk3"],
+      "specialization_ids": ["sp3"]
+    },
+    {
+      "id": "r4",
+      "career_id": "c6",
+      "description": "Gain expertise in system security and network defense.",
+      "education_ids": ["ed3"],
+      "skill_ids": ["sk4"],
+      "specialization_ids": ["sp4"]
+    },
+    {
+      "id": "r5",
+      "career_id": "c7",
+      "description": "Develop design and prototyping skills for mechanical innovation.",
+      "education_ids": ["ed4"],
+      "skill_ids": ["sk5", "sk6"],
+      "specialization_ids": ["sp5"]
+    },
+    {
+      "id": "r6",
+      "career_id": "c8",
+      "description": "Plan and execute infrastructure projects from design to implementation.",
+      "education_ids": ["ed4"],
+      "skill_ids": ["sk5", "sk6"],
+      "specialization_ids": ["sp6"]
+    },
+    {
+      "id": "r7",
+      "career_id": "c9",
+      "description": "Work on power generation, automation, and control systems.",
+      "education_ids": ["ed4"],
+      "skill_ids": ["sk5", "sk6"],
+      "specialization_ids": ["sp7"]
+    },
+    {
+      "id": "r8",
+      "career_id": "c10",
+      "description": "Train in patient care, medical procedures, and communication skills.",
+      "education_ids": ["ed5"],
+      "skill_ids": ["sk7", "sk8"],
+      "specialization_ids": []
+    },
+    {
+      "id": "r9",
+      "career_id": "c11",
+      "description": "Advance clinical practice through postgraduate training and certification.",
+      "education_ids": ["ed6"],
+      "skill_ids": ["sk7", "sk8"],
+      "specialization_ids": ["sp8"]
+    },
+    {
+      "id": "r10",
+      "career_id": "c12",
+      "description": "Focus on community care and public health leadership.",
+      "education_ids": ["ed5"],
+      "skill_ids": ["sk7", "sk8"],
+      "specialization_ids": ["sp9"]
+    },
+
+   
+
+    {
+      "id": "r11",
+      "career_id": "c13",
+      "description": "Build a career in risk management: foundations in risk frameworks, applied modeling, certifications, hands-on stress-testing projects, and senior governance roles.",
+      "education_ids": ["ed1", "ed8"],
+      "skill_ids": ["sk9"],
+      "specialization_ids": ["sp10"]
+    },
+    {
+      "id": "r12",
+      "career_id": "c14",
+      "description": "Actuarial pathway: rigorous actuarial science degree, professional exams, internships in insurance, modelling & pricing experience, then senior actuarial advisory roles.",
+      "education_ids": ["ed7"],
+      "skill_ids": ["sk10", "sk9"],
+      "specialization_ids": ["sp11"]
+    },
+    {
+      "id": "r13",
+      "career_id": "c15",
+      "description": "Cloud architect journey: cloud degree, certificates (AWS/Azure/GCP), DevOps projects, designing multi-cloud platforms, and enterprise architecture leadership.",
+      "education_ids": ["ed9"],
+      "skill_ids": ["sk11"],
+      "specialization_ids": ["sp12"]
+    },
+    {
+      "id": "r14",
+      "career_id": "c16",
+      "description": "AI engineer progression: MSc in ML, foundational ML engineering skills, practical MLOps & deployment experience, specialization in computer vision/NLP, lead ML engineer roles.",
+      "education_ids": ["ed10"],
+      "skill_ids": ["sk12"],
+      "specialization_ids": ["sp13"]
+    },
+    {
+      "id": "r15",
+      "career_id": "c17",
+      "description": "Industrial engineering path: degree in industrial engineering, lean and optimization skills, plant projects & internships, supply-chain system specialization, operations leadership.",
+      "education_ids": ["ed11"],
+      "skill_ids": ["sk13"],
+      "specialization_ids": ["sp14"]
+    },
+    {
+      "id": "r16",
+      "career_id": "c18",
+      "description": "Environmental engineering path: degree, fieldwork and EIA training, specialist water/waste projects, policy and sustainability roles, senior environmental consultancy.",
+      "education_ids": ["ed12"],
+      "skill_ids": ["sk14"],
+      "specialization_ids": ["sp15"]
+    },
+    {
+      "id": "r17",
+      "career_id": "c19",
+      "description": "Critical care nursing: nursing degree, critical care postgraduate training, advanced life support skills, rotations in ICU/trauma units, clinical lead roles.",
+      "education_ids": ["ed5", "ed13"],
+      "skill_ids": ["sk15"],
+      "specialization_ids": ["sp16"]
+    },
+    {
+      "id": "r18",
+      "career_id": "c20",
+      "description": "Nurse educator journey: nursing foundation, clinical experience, postgraduate teaching qualification, simulation pedagogy, and academic or training program leadership.",
+      "education_ids": ["ed5", "ed14"],
+      "skill_ids": ["sk16"],
+      "specialization_ids": ["sp17"]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+/* main.css */
+
+/* Tailwind import (if present) */
+@import "tailwindcss";
+
+/* ────────────────────────────────
+   🌗 Base Theme Variables (Light)
+────────────────────────────────── */
+:root {
+  --bg-color: #f9fafb;        /* Page background */
+  --bg-deep: #f3f4f6;         /* Deep container background */
+  --bg-card-dark: #ffffff;    /* Card-style sections */
+  --card-color: #ffffff;
+  --text-color: #111827;
+  --text-muted: #4b5563;
+  --accent-blue: #2967F6;
+  --accent-cyan: #00BCD4;
+  --accent-green: #00E676;
+}
+
+/* ────────────────────────────────
+   🌙 Dark Mode Variables
+────────────────────────────────── */
+html.dark {
+  --bg-color: #0D1117;
+  --bg-deep: #161B22;
+  --bg-card-dark: #161B22;
+  --card-color: #161B22;
+  --text-color: #E6EDF3;
+  --text-muted: #8B949E;
+  --accent-blue: #2967F6;
+  --accent-cyan: #00BCD4;
+  --accent-green: #00E676;
+}
+
+/* ────────────────────────────────
+   🌍 Global Styles
+────────────────────────────────── */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Cards, containers, panels */
+.bg-card {
+  background-color: var(--card-color);
+  transition: background-color 0.3s ease;
+}
+
+/* Dynamic accents */
+.text-accent-blue {
+  color: var(--accent-blue);
+}
+
+.text-accent-cyan {
+  color: var(--accent-cyan);
+}
+
+.text-accent-green {
+  color: var(--accent-green);
+}
+
+.border-accent-cyan {
+  border-color: var(--accent-cyan);
+}
+
+/* Smooth transitions for all theme-dependent elements */
+* {
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}

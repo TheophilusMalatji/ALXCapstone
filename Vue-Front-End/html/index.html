@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Pathways - Home Dashboard</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <script>
+        // Tailwind config to enable dark mode based on class and custom colors
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-deep': '#0D1117', // Very dark background
+                        'bg-card-dark': '#161B22', // Slightly lighter for card backgrounds
+                        'accent-blue': '#2967F6', // A vibrant, electric blue
+                        'accent-cyan': '#00BCD4', // Cyan for highlights
+                        'accent-green': '#00E676', // Bright green for success/positive outlook
+                        'text-light': '#E6EDF3', // Light text for readability
+                        'text-muted': '#8B949E', // Muted text for secondary info
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'], 
+                        spacegrotesk: ['"Space Grotesk"', 'sans-serif'], // Futuristic headline font
+                    },
+                    boxShadow: {
+                        'glow-sm': '0 0 5px rgba(41, 103, 246, 0.5)',
+                        'glow-md': '0 0 10px rgba(41, 103, 246, 0.7)',
+                        'glow-lg': '0 0 20px rgba(41, 103, 246, 0.8)',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom font families */
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .font-spacegrotesk { font-family: 'Space Grotesk', sans-serif; }
+        
+        /* Ensure smooth scrolling and prevent horizontal scroll */
+        body { overflow-x: hidden; }
+
+        /* Scrollbar styling for a modern look (Webkit) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background-color: #2967F6; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background-color: #0D1117; } 
+
+        /* Custom animation for subtle pulse/glow */
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 5px rgba(41, 103, 246, 0.5), inset 0 0 3px rgba(41, 103, 246, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(41, 103, 246, 0.8), inset 0 0 7px rgba(41, 103, 246, 0.5); }
+        }
+
+        .animate-pulse-glow {
+            animation: pulse-glow 3s infinite alternate ease-in-out;
+        }
+        
+        /* New styles for the fixed sidebar layout */
+        .sidebar {
+            width: 280px; /* Fixed width for the sidebar */
+            transition: all 0.3s ease;
+        }
+
+    </style>
+</head>
+<body class="bg-bg-deep font-inter text-text-light antialiased transition-colors duration-300">
+
+    <!-- Main Container: Sidebar and Content -->
+    <div class="flex min-h-screen">
+    
+        <!-- Fixed Sidebar Navigation -->
+        <nav class="sidebar flex flex-col p-6 bg-bg-card-dark border-r border-gray-800 shadow-xl shadow-accent-blue/10 sticky top-0 h-screen z-20">
+            
+            <!-- Logo/Title -->
+            <div class="mb-10 pt-2">
+                <h1 class="text-3xl font-spacegrotesk font-bold tracking-tight flex items-center text-accent-cyan">
+                    <svg class="w-8 h-8 mr-3 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4v4m0 0l-4 4m-4-4v4m0 0l-4 4m-4-4l4-4m-4 4l4-4m4-4l4-4m-4 4l4 4"></path></svg>
+                    Quantum Pathways
+                </h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="flex flex-col space-y-4 flex-grow">
+                <a href="index.html" class="flex items-center space-x-3 p-3 rounded-lg text-accent-cyan bg-accent-blue/20 font-bold border-l-4 border-accent-cyan transition duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    <span>Home</span>
+                </a>
+                <a href="career_roadmap.html" class="flex items-center space-x-3 p-3 rounded-lg text-text-muted hover:text-accent-cyan hover:bg-gray-700 transition duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-4v4m-4-4v4m6-10H6a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2z"></path></svg>
+                    <span>Pathways Filter</span>
+                </a>
+                <a href="all_careers.html" class="flex items-center space-x-3 p-3 rounded-lg text-text-muted hover:text-accent-cyan hover:bg-gray-700 transition duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                    <span>All Career Profiles</span>
+                </a>
+            </div>
+            
+            <!-- Theme Toggle (at the bottom) -->
+            <div class="mt-auto pt-6 border-t border-gray-800">
+                <button id="theme-toggle" class="w-full flex items-center justify-between p-3 rounded-lg bg-gray-700 hover:bg-gray-600 transition duration-200 text-text-light">
+                    <span class="text-lg font-medium">Toggle Theme</span>
+                    <!-- Icon SVGs are placed here, visibility handled by JS -->
+                    <div class="flex items-center">
+                        <svg id="sun-icon" class="w-6 h-6 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        <svg id="moon-icon" class="w-6 h-6 text-accent-cyan hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    </div>
+                </button>
+            </div>
+            
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content-area flex flex-col flex-grow">
+            <main class="w-full bg-bg-card-dark shadow-inner shadow-gray-900/50 p-8 flex-grow">
+                
+                <!-- Hero Section -->
+                <div class="text-center py-16 px-4 mb-10 border-b border-gray-800 max-w-5xl mx-auto">
+                    <h2 class="text-5xl md:text-6xl font-spacegrotesk font-extrabold text-text-light mb-4 tracking-tighter">
+                        Welcome to the <span class="text-accent-cyan">Pathfinding Console</span>
+                    </h2>
+                    <p class="text-xl text-text-muted max-w-3xl mx-auto mb-8">
+                        Analyze, filter, and visualize your optimal career trajectory in the digital economy. Your future path starts here.
+                    </p>
+                    <a href="career_roadmap.html" class="inline-flex items-center justify-center px-8 py-3 text-lg font-bold rounded-full text-bg-deep bg-accent-green hover:bg-accent-green/80 transition duration-300 shadow-lg shadow-accent-green/40 hover:shadow-glow-md" style="animation-duration: 4s;">
+                        Start Your Career Scan
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Key Features Grid -->
+                <h3 class="text-3xl font-spacegrotesk font-bold text-accent-blue mb-8 border-b border-gray-700 pb-3 max-w-5xl mx-auto">
+                    System Capabilities
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    
+                    <!-- Feature 1: Dynamic Filtering -->
+                    <div class="p-6 bg-bg-deep rounded-xl border border-gray-700 shadow-xl hover:border-accent-cyan transition duration-200">
+                        <svg class="w-10 h-10 text-accent-cyan mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM4 10h16a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6a1 1 0 011-1z"></path></svg>
+                        <h4 class="text-xl font-spacegrotesk font-bold text-text-light mb-2">Targeted Search Protocol</h4>
+                        <p class="text-text-muted">Use the Pathways Filter to narrow down careers based on required education time, minimum salary expectations, and preferred industry sector.</p>
+                    </div>
+
+                    <!-- Feature 2: Roadmap Visualization -->
+                    <div class="p-6 bg-bg-deep rounded-xl border border-gray-700 shadow-xl hover:border-accent-green transition duration-200">
+                        <svg class="w-10 h-10 text-accent-green mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM12 2v2m0 16v2m9-9h-2M3 12H1m15.364 6.364l-1.414-1.414M6.05 6.05L4.636 4.636m12.04 0l-1.414 1.414m-12.04 12.04l1.414-1.414"></path></svg>
+                        <h4 class="text-xl font-spacegrotesk font-bold text-text-light mb-2">Detailed Trajectory Maps</h4>
+                        <p class="text-text-muted">View detailed educational steps, core competencies, and specialization modules for each matching career profile.</p>
+                    </div>
+
+                    <!-- Feature 3: Data-Driven Insights -->
+                    <div class="p-6 bg-bg-deep rounded-xl border border-gray-700 shadow-xl hover:border-accent-blue transition duration-200">
+                        <svg class="w-10 h-10 text-accent-blue mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m-6 0h6"></path></svg>
+                        <h4 class="text-xl font-spacegrotesk font-bold text-text-light mb-2">Outlook Projection</h4>
+                        <p class="text-text-muted">Gain immediate insights into job growth projections and estimated remuneration based on synthesized industry data.</p>
+                    </div>
+                </div>
+                
+            </main>
+        
+            <!-- Footer (Identical to career_roadmap.html) -->
+            <footer class="text-center py-4 text-text-muted text-sm border-t border-gray-800 bg-bg-card-dark w-full">
+                <p>&copy; 2025 Quantum Pathways | Designed for the Digital Age</p>
+            </footer>
+        </div>
+        
+    </div> <!-- End of flex container -->
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // DOM Elements
+            const htmlElement = document.documentElement;
+            const themeToggle = document.getElementById('theme-toggle');
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+
+            // --- Dark Mode Toggle Logic (Copied from career_roadmap.html) ---
+            function updateTheme(isDark) {
+                if (isDark) {
+                    htmlElement.classList.add('dark');
+                    // In dark mode, show sun (to switch to light)
+                    sunIcon.classList.remove('hidden');
+                    moonIcon.classList.add('hidden');
+                } else {
+                    htmlElement.classList.remove('dark');
+                    // In light mode, show moon (to switch to dark)
+                    sunIcon.classList.add('hidden');
+                    moonIcon.classList.remove('hidden');
+                }
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = htmlElement.classList.contains('dark');
+                updateTheme(!isDark);
+            });
+
+            // Apply theme on load
+            const savedTheme = localStorage.getItem('theme');
+            const defaultDark = !savedTheme || savedTheme === 'dark'; // Default to dark if no preference saved
+            updateTheme(defaultDark);
+        });
+    </script>
+</body>
+</html>

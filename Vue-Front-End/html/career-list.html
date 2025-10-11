@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Pathways - All Career Profiles</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <script>
+        // Tailwind config to enable dark mode based on class and custom colors
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-deep': '#0D1117', // Very dark background
+                        'bg-card-dark': '#161B22', // Slightly lighter for card backgrounds
+                        'accent-blue': '#2967F6', // A vibrant, electric blue
+                        'accent-cyan': '#00BCD4', // Cyan for highlights
+                        'accent-green': '#00E676', // Bright green for success/positive outlook
+                        'text-light': '#E6EDF3', // Light text for readability
+                        'text-muted': '#8B949E', // Muted text for secondary info
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'], 
+                        spacegrotesk: ['"Space Grotesk"', 'sans-serif'], // Futuristic headline font
+                    },
+                    boxShadow: {
+                        'glow-sm': '0 0 5px rgba(41, 103, 246, 0.5)',
+                        'glow-md': '0 0 10px rgba(41, 103, 246, 0.7)',
+                        'glow-lg': '0 0 20px rgba(41, 103, 246, 0.8)',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom font families */
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .font-spacegrotesk { font-family: 'Space Grotesk', sans-serif; }
+        
+        /* Ensure smooth scrolling and prevent horizontal scroll */
+        body { overflow-x: hidden; }
+
+        /* Scrollbar styling for a modern look (Webkit) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background-color: #2967F6; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background-color: #0D1117; } 
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 280px; /* Fixed width for the sidebar */
+            transition: all 0.3s ease;
+        }
+
+    </style>
+</head>
+<body class="bg-bg-deep font-inter text-text-light antialiased transition-colors duration-300">
+
+    <!-- Main Container: Sidebar and Content -->
+    <div class="flex min-h-screen">
+    
+        <!-- Fixed Sidebar Navigation -->
+        <nav class="sidebar flex flex-col p-6 bg-bg-card-dark border-r border-gray-800 shadow-xl shadow-accent-blue/10 sticky top-0 h-screen z-20">
+            
+            <!-- Logo/Title -->
+            <div class="mb-10 pt-2">
+                <h1 class="text-3xl font-spacegrotesk font-bold tracking-tight flex items-center text-accent-cyan">
+                    <svg class="w-8 h-8 mr-3 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4v4m0 0l-4 4m-4-4v4m0 0l-4 4m-4-4l4-4m-4 4l4-4m4-4l4-4m-4 4l4 4"></path></svg>
+                    Quantum Pathways
+                </h1>
+            </div>
+            
+            <!-- Navigation Links - All Career Profiles is active here -->
+            <div class="flex flex-col space-y-4 flex-grow">
+                <a href="index.html" class="flex items-center space-x-3 p-3 rounded-lg text-text-muted hover:text-accent-cyan hover:bg-gray-700 transition duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    <span>Home</span>
+                </a>
+                <a href="career_roadmap.html" class="flex items-center space-x-3 p-3 rounded-lg text-text-muted hover:text-accent-cyan hover:bg-gray-700 transition duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-4v4m-4-4v4m6-10H6a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2z"></path></svg>
+                    <span>Pathways Filter</span>
+                </a>
+                 <a href="all_careers.html" class="flex items-center space-x-3 p-3 rounded-lg text-accent-cyan bg-accent-blue/20 font-bold border-l-4 border-accent-cyan transition duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                    <span>All Career Profiles</span>
+                </a>
+            </div>
+            
+            <!-- Theme Toggle (at the bottom) -->
+            <div class="mt-auto pt-6 border-t border-gray-800">
+                <button id="theme-toggle" class="w-full flex items-center justify-between p-3 rounded-lg bg-gray-700 hover:bg-gray-600 transition duration-200 text-text-light">
+                    <span class="text-lg font-medium">Toggle Theme</span>
+                    <!-- Icon SVGs are placed here, visibility handled by JS -->
+                    <div class="flex items-center">
+                        <svg id="sun-icon" class="w-6 h-6 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        <svg id="moon-icon" class="w-6 h-6 text-accent-cyan hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    </div>
+                </button>
+            </div>
+            
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content-area flex flex-col flex-grow">
+            <main class="w-full bg-bg-card-dark shadow-inner shadow-gray-900/50 p-8 flex-grow max-w-7xl mx-auto">
+                
+                <!-- Page Header -->
+                <header class="mb-10 pb-4 border-b border-gray-800">
+                    <h2 class="text-4xl font-spacegrotesk font-extrabold text-text-light tracking-tight">
+                        All Available Career Profiles
+                    </h2>
+                    <p class="text-lg text-text-muted mt-2">
+                        A comprehensive list of all career trajectories currently tracked in the system. Click 'View Details' to see the full roadmap.
+                    </p>
+                </header>
+
+                <!-- Careers List -->
+                <div id="careers-list" class="space-y-4 pb-10">
+                    <!-- Dynamic career cards will be rendered here by JS -->
+                </div>
+                
+            </main>
+        
+            <!-- Footer -->
+            <footer class="text-center py-4 text-text-muted text-sm border-t border-gray-800 bg-bg-card-dark w-full">
+                <p>&copy; 2025 Quantum Pathways | Designed for the Digital Age</p>
+            </footer>
+        </div>
+        
+    </div> <!-- End of flex container -->
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // DOM Elements
+            const htmlElement = document.documentElement;
+            const themeToggle = document.getElementById('theme-toggle');
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+            const careersListContainer = document.getElementById('careers-list');
+
+            // --- Dark Mode Toggle Logic ---
+            function updateTheme(isDark) {
+                if (isDark) {
+                    htmlElement.classList.add('dark');
+                    sunIcon.classList.remove('hidden');
+                    moonIcon.classList.add('hidden');
+                } else {
+                    htmlElement.classList.remove('dark');
+                    sunIcon.classList.add('hidden');
+                    moonIcon.classList.remove('hidden');
+                }
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = htmlElement.classList.contains('dark');
+                updateTheme(!isDark);
+            });
+
+            // Apply theme on load
+            const savedTheme = localStorage.getItem('theme');
+            const defaultDark = !savedTheme || savedTheme === 'dark'; // Default to dark if no preference saved
+            updateTheme(defaultDark);
+
+            // --- Career List Logic ---
+            const mockCareers = [
+                { id: "quantum_eng", name: "Quantum Software Engineer", description: "Develops software for quantum processors and algorithms.", time: 3, salary: 120000, sector: "Quantum Computing" },
+                { id: "ai_ethics", name: "AI Ethics Specialist", description: "Ensures AI systems are fair, transparent, and compliant with ethical guidelines.", time: 5, salary: 80000, sector: "Artificial Intelligence & ML" },
+                { id: "dapp_dev", name: "Decentralized App Developer", description: "Builds applications on blockchain networks using smart contracts.", time: 3, salary: 120000, sector: "Blockchain & Web3" },
+                { id: "cloud_sec", name: "Cloud Security Architect", description: "Designs and maintains robust security infrastructure for cloud environments.", time: 5, salary: 150000, sector: "Cybersecurity & Data Privacy" },
+                { id: "data_bio", name: "Data Scientist (Bioinformatics)", description: "Analyzes complex biological data sets to find medical and genetic insights.", time: 3, salary: 80000, sector: "Bioinformatics & Health Tech" },
+                { id: "prompt_eng", name: "Prompt Engineer (AI)", description: "Specializes in crafting inputs for LLMs to achieve desired, optimized outputs.", time: 1, salary: 50000, sector: "Artificial Intelligence & ML" },
+                { id: "crypto_aud", name: "Cryptocurrency Auditor", description: "Performs financial and security audits of digital assets and blockchain transactions.", time: 1, salary: 50000, sector: "Blockchain & Web3" },
+            ];
+            
+            function renderCareerCard(career) {
+                // Determine icon color based on sector for visual flair
+                let iconColor = 'text-accent-blue';
+                if (career.sector.includes('AI')) iconColor = 'text-accent-green';
+                if (career.sector.includes('Quantum')) iconColor = 'text-accent-cyan';
+
+                return `
+                    <div class="career-card p-6 bg-bg-deep rounded-xl border border-gray-700 shadow-md transition-shadow duration-300 hover:shadow-glow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                        <div class="sm:w-3/4">
+                            <h4 class="text-2xl font-spacegrotesk font-bold ${iconColor}">${career.name}</h4>
+                            <p class="text-text-muted mt-1 mb-4">${career.description}</p>
+                            <div class="flex flex-wrap gap-4 text-sm text-text-light">
+                                <span class="flex items-center space-x-2 p-1.5 rounded-full bg-gray-700/50">
+                                    <svg class="w-4 h-4 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span>${career.time}+ Years Education</span>
+                                </span>
+                                <span class="flex items-center space-x-2 p-1.5 rounded-full bg-gray-700/50">
+                                    <svg class="w-4 h-4 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V9m0 6v1"></path></svg>
+                                    <span>$${(career.salary / 1000).toFixed(0)}K+ Starting</span>
+                                </span>
+                                <span class="flex items-center space-x-2 p-1.5 rounded-full bg-gray-700/50">
+                                    <svg class="w-4 h-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                    <span>${career.sector}</span>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="career_details.html?id=${career.id}" class="mt-4 sm:mt-0 px-6 py-2 font-bold rounded-full bg-accent-blue text-bg-deep hover:bg-accent-blue/80 transition duration-200 shadow-md whitespace-nowrap">
+                            View Details
+                        </a>
+                    </div>
+                `;
+            }
+
+            // Render all careers
+            careersListContainer.innerHTML = mockCareers.map(renderCareerCard).join('');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+<script>
+  tailwindcss.config = {
+    darkMode: 'class', // ✅ Make Tailwind respond to .dark class
+    theme: {
+      extend: {
+        colors: {
+          'bg-deep': '#0D1117',
+          'bg-card-dark': '#161B22',
+          'accent-blue': '#3B82F6',
+          'accent-cyan': '#00FFFF',
+          'text-light': '#D1D5DB',
+          'text-dark': '#0D1117',
+        },
+        fontFamily: {
+          spacegrotesk: ['"Space Grotesk"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
