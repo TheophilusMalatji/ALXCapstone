@@ -21,14 +21,14 @@
         <!-- Education Duration -->
         <div class="flex flex-col space-y-2">
           <label class="text-sm font-semibold">Maximum Study Duration (Years)</label>
-          <input type="range" min="1" max="8" v-model="filters.duration" class="w-full accent-[var(--accent-blue)] cursor-pointer"/>
-          <span class="text-sm opacity-80">{{ filters.duration }} years</span>
+          <input type="range" min="1" max="8" v-model="tempFilters.duration" class="w-full accent-[var(--accent-blue)] cursor-pointer"/>
+          <span class="text-sm opacity-80">{{ tempFilters.duration }} years</span>
         </div>
 
         <!-- Salary -->
         <div class="flex flex-col space-y-2">
-          <label class="text-sm font-semibold">Minimum Expected Salary (USD)</label>
-          <input type="number" v-model="filters.salary" placeholder="e.g. 50000"
+          <label class="text-sm font-semibold">Minimum Expected Salary (R)</label>
+          <input type="number" v-model="tempFilters.salary" placeholder="e.g. 50000"
                  class="p-2 rounded border bg-transparent focus:outline-none"
                  :style="{ borderColor: 'var(--accent-blue)', color: 'var(--text-color)' }"/>
         </div>
@@ -36,10 +36,12 @@
         <!-- Sector -->
         <div class="flex flex-col space-y-2">
           <label class="text-sm font-semibold">Sector</label>
-          <select v-model="filters.sector" class="p-2 rounded border focus:outline-none transition-all duration-200"
+          <select v-model="tempFilters.sector" class="p-2 rounded border focus:outline-none transition-all duration-200"
                   :style="{ borderColor: 'var(--accent-blue)', backgroundColor: isDark ? '#0D1117' : '#ffffff', color: isDark ? '#ffffff' : '#000000' }">
             <option disabled value="">Select sector</option>
-            <option v-for="sector in sectors" :key="sector.id" :value="sector.id">{{ sector.name }}</option>
+            <option v-for="sector in sectors" :key="sector.id" :value="sector.id">
+              {{ sector.name }}
+            </option>
           </select>
         </div>
       </div>
@@ -78,7 +80,7 @@
             {{ career.name }}
           </h3>
           <p class="opacity-80 text-sm mb-4">{{ career.sector?.name }} • {{ career.duration_years }} years</p>
-          <p class="opacity-70 text-sm">Est. Salary: ${{ career.average_salary.toLocaleString() }}</p>
+          <p class="opacity-70 text-sm">Est. Salary: R{{ career.average_salary.toLocaleString() }}</p>
         </router-link>
       </div>
     </section>
@@ -86,40 +88,53 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { useApiData } from '@/hooks/useApiData'
+import { ref, onMounted } from 'vue'
 
-const { data, fetchData } = useApiData()
 const careers = ref([])
 const sectors = ref([])
 
+// Active filters applied on click
 const filters = ref({
   sector: '',
   duration: 8,
   salary: 0
 })
 
+// Temporary values that user edits before applying
+const tempFilters = ref({ ...filters.value })
+
+const filtered = ref([])
 const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 
 onMounted(async () => {
-  await fetchData('/careers?_expand=sector')
-  careers.value = data.value || []
-  const sectorData = await fetch('/sectors').then(res => res.json())
+  const careersData = await fetch('http://localhost:2500/careers').then(r => r.json())
+  const sectorData = await fetch('http://localhost:2500/sectors').then(r => r.json())
+
+  careers.value = careersData.map(c => ({
+    ...c,
+    sector: sectorData.find(s => s.id === c.sector_id)
+  }))
+
   sectors.value = sectorData
+  filtered.value = careers.value // Show all by default
 })
 
-const filtered = computed(() =>
-  careers.value.filter(c => {
-    const matchSector = filters.value.sector ? c.sector?.id === filters.value.sector : true
-    const matchDuration = c.duration_years <= filters.value.duration
-    const matchSalary = c.average_salary >= filters.value.salary
+function applyFilters() {
+  filtered.value = careers.value.filter(c => {
+    const matchSector = tempFilters.value.sector ? c.sector?.id === tempFilters.value.sector : true
+    const matchDuration = c.duration_years <= tempFilters.value.duration
+    const matchSalary = c.average_salary >= tempFilters.value.salary
     return matchSector && matchDuration && matchSalary
   })
-)
 
-function applyFilters() {}
+  // Commit temp to active
+  filters.value = { ...tempFilters.value }
+}
+
 function resetFilters() {
   filters.value = { sector: '', duration: 8, salary: 0 }
+  tempFilters.value = { ...filters.value }
+  filtered.value = careers.value
 }
 </script>
 
