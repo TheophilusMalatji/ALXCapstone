@@ -10,28 +10,32 @@ from .models import (
     Skill,
     Responsibility,
     Specialization,
-    Roadmap,
+    Roadmap, Certification, Phase
 )
 
 
-@admin.register(Sector)
 class SectorAdmin(admin.ModelAdmin):
     list_display = ("name", "description", "created_at")
-    search_fields = ("name", "description")
+    search_fields = ['name']
+
+admin.site.register(Sector, SectorAdmin)
+
+
 
 
 @admin.register(Career)
 class CareerAdmin(admin.ModelAdmin):
     list_display = ("name", "sector", "average_salary", "created_at")
     list_filter = ("sector",)
-    search_fields = ("name", "overview", "job_outlook")
-    autocomplete_fields = ("sector",)
-    ordering = ("name",)
+    search_fields = ["name", "overview", "job_outlook"]
+    autocomplete_fields = ["sector"]  # ✅ must match sector admin search_fields
+    ordering = ["name"]
+
 
 
 @admin.register(Introduction)
 class IntroductionAdmin(admin.ModelAdmin):
-    list_display = ("career", "created_at")
+    list_display = ("career", "education_duration_years", "education_duration_months", "created_at")
     search_fields = ("career__name", "content")
     autocomplete_fields = ("career",)
 
@@ -78,3 +82,13 @@ class RoadmapAdmin(admin.ModelAdmin):
     search_fields = ("career__name", "description")
     autocomplete_fields = ("career",)
     filter_horizontal = ("education", "skills", "specializations")
+
+@admin.register(Certification)
+class CertificationAdmin(admin.ModelAdmin):
+    list_display = ("name","description",)
+    search_fields = ("name",)   
+
+@admin.register(Phase)
+class PhaseAdmin(admin.ModelAdmin):
+    list_display =("roadmap","name")
+    search_fields =("name","roadmap",)

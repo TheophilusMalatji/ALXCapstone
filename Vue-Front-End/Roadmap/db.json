@@ -1,522 +1,1054 @@
+
 {
   "sectors": [
     {
-      "id": "s1",
+      "id": "s001",
       "name": "Finance",
       "description": "Financial planning, investment, and corporate finance careers."
     },
     {
-      "id": "s2",
+      "id": "s002",
       "name": "Information Technology",
       "description": "Technology and software development careers driving digital innovation."
     },
     {
-      "id": "s3",
+      "id": "s003",
       "name": "Engineering",
       "description": "Mechanical, civil, and electrical engineering disciplines shaping infrastructure and technology."
     },
     {
-      "id": "s4",
-      "name": "Nursing",
+      "id": "s004",
+      "name": "Nursing & Healthcare",
       "description": "Healthcare and medical support professions focused on patient wellbeing."
     }
   ],
-
   "careers": [
     {
-      "id": "c1",
+      "id": "c001",
       "name": "Financial Analyst",
-      "sector_id": "s1",
+      "sector_id": "s001",
       "overview": "Evaluate investments and support financial decision-making through analytical modeling.",
-      "average_salary": 720000,
+      "average_salary": 1044000,
       "job_outlook": "Steady growth driven by corporate analytics.",
       "duration_years": 4
     },
     {
-      "id": "c2",
+      "id": "c002",
       "name": "Investment Banker",
-      "sector_id": "s1",
+      "sector_id": "s001",
       "overview": "Manage mergers, acquisitions, and capital market deals.",
-      "average_salary": 1200000,
+      "average_salary": 1740000,
       "job_outlook": "High earning potential, highly competitive.",
       "duration_years": 5
     },
     {
-      "id": "c3",
+      "id": "c003",
       "name": "Financial Planner",
-      "sector_id": "s1",
+      "sector_id": "s001",
       "overview": "Guide clients in achieving long-term financial stability and independence.",
-      "average_salary": 700000,
+      "average_salary": 1015000,
       "job_outlook": "Growing demand for personalized financial advice.",
       "duration_years": 4
     },
     {
-      "id": "c4",
-      "name": "Software Engineer",
-      "sector_id": "s2",
-      "overview": "Design, develop, and maintain applications that power modern software systems.",
-      "average_salary": 900000,
-      "job_outlook": "Strong growth across all digital industries.",
-      "duration_years": 4
-    },
-    {
-      "id": "c5",
-      "name": "Data Analyst",
-      "sector_id": "s2",
-      "overview": "Collect, process, and analyze data to produce actionable insights.",
-      "average_salary": 680000,
-      "job_outlook": "Rapid growth driven by data-driven decision making.",
-      "duration_years": 3
-    },
-    {
-      "id": "c6",
-      "name": "Cybersecurity Specialist",
-      "sector_id": "s2",
-      "overview": "Protect systems and networks from digital attacks and breaches.",
-      "average_salary": 950000,
-      "job_outlook": "One of the fastest-growing technology fields.",
-      "duration_years": 4
-    },
-    {
-      "id": "c7",
-      "name": "Mechanical Engineer",
-      "sector_id": "s3",
-      "overview": "Design, develop, and build mechanical systems and devices.",
-      "average_salary": 800000,
-      "job_outlook": "Solid demand in manufacturing and automation.",
-      "duration_years": 5
-    },
-    {
-      "id": "c8",
-      "name": "Civil Engineer",
-      "sector_id": "s3",
-      "overview": "Plan and design essential infrastructure projects such as roads, bridges, and buildings.",
-      "average_salary": 780000,
-      "job_outlook": "Consistent demand in public and private sectors.",
-      "duration_years": 5
-    },
-    {
-      "id": "c9",
-      "name": "Electrical Engineer",
-      "sector_id": "s3",
-      "overview": "Develop and maintain electrical and electronic systems.",
-      "average_salary": 850000,
-      "job_outlook": "Strong growth in renewable energy and robotics.",
-      "duration_years": 5
-    },
-    {
-      "id": "c10",
-      "name": "Registered Nurse",
-      "sector_id": "s4",
-      "overview": "Provide care, support, and health education to patients in clinical settings.",
-      "average_salary": 750000,
-      "job_outlook": "High global demand across all healthcare systems.",
-      "duration_years": 4
-    },
-    {
-      "id": "c11",
-      "name": "Nurse Practitioner",
-      "sector_id": "s4",
-      "overview": "Diagnose and manage patients with advanced nursing autonomy.",
-      "average_salary": 1150000,
-      "job_outlook": "Strong demand in both private and public health sectors.",
-      "duration_years": 6
-    },
-    {
-      "id": "c12",
-      "name": "Public Health Nurse",
-      "sector_id": "s4",
-      "overview": "Work in community and outreach programs promoting preventive health.",
-      "average_salary": 800000,
-      "job_outlook": "Growing focus on preventive healthcare initiatives.",
-      "duration_years": 4
-    },
-
-
-    {
-      "id": "c13",
+      "id": "c004",
       "name": "Risk Manager",
-      "sector_id": "s1",
+      "sector_id": "s001",
       "overview": "Identify, assess and mitigate financial risks across investments and operations.",
-      "average_salary": 950000,
+      "average_salary": 1377500,
       "job_outlook": "Growing emphasis on risk quantification and regulatory compliance.",
       "duration_years": 5
     },
     {
-      "id": "c14",
+      "id": "c005",
       "name": "Actuary",
-      "sector_id": "s1",
+      "sector_id": "s001",
       "overview": "Use mathematics and statistics to model financial risk and design insurance products.",
-      "average_salary": 1400000,
+      "average_salary": 2030000,
       "job_outlook": "Strong demand in insurance, pensions, and risk analytics.",
       "duration_years": 6
     },
     {
-      "id": "c15",
-      "name": "Cloud Architect",
-      "sector_id": "s2",
-      "overview": "Design and operate scalable cloud solutions and platforms for modern applications.",
-      "average_salary": 1300000,
-      "job_outlook": "Very strong demand as organizations migrate to cloud-first architectures.",
-      "duration_years": 5
+      "id": "c006",
+      "name": "Quantitative Analyst (Quant)",
+      "sector_id": "s001",
+      "overview": "Develop complex mathematical models for pricing and trading financial derivatives.",
+      "average_salary": 2465000,
+      "job_outlook": "Exceptional demand in global investment banks and hedge funds.",
+      "duration_years": 6
     },
     {
-      "id": "c16",
+      "id": "c007",
+      "name": "Software Engineer",
+      "sector_id": "s002",
+      "overview": "Design, develop, and maintain applications that power modern software systems.",
+      "average_salary": 1305000,
+      "job_outlook": "Strong growth across all digital industries.",
+      "duration_years": 4
+    },
+    {
+      "id": "c008",
+      "name": "Data Analyst",
+      "sector_id": "s002",
+      "overview": "Collect, process, and analyze data to produce actionable insights.",
+      "average_salary": 986000,
+      "job_outlook": "Rapid growth driven by data-driven decision making.",
+      "duration_years": 3
+    },
+    {
+      "id": "c009",
       "name": "AI Engineer",
-      "sector_id": "s2",
+      "sector_id": "s002",
       "overview": "Build and deploy machine learning models and production AI systems.",
-      "average_salary": 1500000,
+      "average_salary": 2175000,
       "job_outlook": "Rapid growth, high demand for applied ML engineers.",
       "duration_years": 5
     },
     {
-      "id": "c17",
+      "id": "c010",
+      "name": "Cloud Architect",
+      "sector_id": "s002",
+      "overview": "Design and operate scalable cloud solutions and platforms for modern applications.",
+      "average_salary": 1885000,
+      "job_outlook": "Very strong demand as organizations migrate to cloud-first architectures.",
+      "duration_years": 5
+    },
+    {
+      "id": "c011",
+      "name": "DevOps Engineer",
+      "sector_id": "s002",
+      "overview": "Bridge development and operations by managing CI/CD pipelines and infrastructure as code.",
+      "average_salary": 1522500,
+      "job_outlook": "High demand, essential for modern software delivery.",
+      "duration_years": 4
+    },
+    {
+      "id": "c012",
+      "name": "Cybersecurity Specialist",
+      "sector_id": "s002",
+      "overview": "Protect systems and networks from digital attacks and breaches.",
+      "average_salary": 1377500,
+      "job_outlook": "One of the fastest-growing technology fields.",
+      "duration_years": 4
+    },
+    {
+      "id": "c013",
+      "name": "Mechanical Engineer",
+      "sector_id": "s003",
+      "overview": "Design, develop, and build mechanical systems and devices.",
+      "average_salary": 1160000,
+      "job_outlook": "Solid demand in manufacturing and automation.",
+      "duration_years": 5
+    },
+    {
+      "id": "c014",
+      "name": "Civil Engineer",
+      "sector_id": "s003",
+      "overview": "Plan and design essential infrastructure projects such as roads, bridges, and buildings.",
+      "average_salary": 1131000,
+      "job_outlook": "Consistent demand in public and private sectors.",
+      "duration_years": 5
+    },
+    {
+      "id": "c015",
+      "name": "Electrical Engineer",
+      "sector_id": "s003",
+      "overview": "Develop and maintain electrical and electronic systems.",
+      "average_salary": 1232500,
+      "job_outlook": "Strong growth in renewable energy and robotics.",
+      "duration_years": 5
+    },
+    {
+      "id": "c016",
       "name": "Industrial Engineer",
-      "sector_id": "s3",
+      "sector_id": "s003",
       "overview": "Optimize complex processes, systems, and supply chains for efficiency and productivity.",
-      "average_salary": 820000,
+      "average_salary": 1189000,
       "job_outlook": "Stable demand in manufacturing, logistics and operations.",
       "duration_years": 5
     },
     {
-      "id": "c18",
+      "id": "c017",
       "name": "Environmental Engineer",
-      "sector_id": "s3",
+      "sector_id": "s003",
       "overview": "Design solutions to environmental challenges: water, waste, remediation and sustainability.",
-      "average_salary": 780000,
+      "average_salary": 1131000,
       "job_outlook": "Growing demand for sustainability and environmental compliance roles.",
       "duration_years": 5
     },
     {
-      "id": "c19",
+      "id": "c018",
+      "name": "Biomedical Engineer",
+      "sector_id": "s003",
+      "overview": "Design and develop medical devices, equipment, and innovative healthcare technologies.",
+      "average_salary": 1261500,
+      "job_outlook": "Strong growth driven by advancements in medical technology.",
+      "duration_years": 5
+    },
+    {
+      "id": "c019",
+      "name": "Registered Nurse",
+      "sector_id": "s004",
+      "overview": "Provide care, support, and health education to patients in clinical settings.",
+      "average_salary": 1087500,
+      "job_outlook": "High global demand across all healthcare systems.",
+      "duration_years": 4
+    },
+    {
+      "id": "c020",
+      "name": "Nurse Practitioner",
+      "sector_id": "s004",
+      "overview": "Diagnose and manage patients with advanced nursing autonomy.",
+      "average_salary": 1667500,
+      "job_outlook": "Strong demand in both private and public health sectors.",
+      "duration_years": 6
+    },
+    {
+      "id": "c021",
       "name": "Critical Care Nurse",
-      "sector_id": "s4",
+      "sector_id": "s004",
       "overview": "Provide acute, high-dependency care for critically ill patients in ICU settings.",
-      "average_salary": 920000,
+      "average_salary": 1334000,
       "job_outlook": "Strong need in hospitals with increasing specialization.",
       "duration_years": 5
     },
     {
-      "id": "c20",
+      "id": "c022",
       "name": "Nurse Educator",
-      "sector_id": "s4",
+      "sector_id": "s004",
       "overview": "Teach and mentor the next generation of nurses; design curricula and clinical training.",
-      "average_salary": 880000,
+      "average_salary": 1276000,
       "job_outlook": "Growing demand for nurse educators to support workforce expansion.",
       "duration_years": 6
+    },
+    {
+      "id": "c023",
+      "name": "Clinical Research Coordinator",
+      "sector_id": "s004",
+      "overview": "Manage and execute clinical trials; coordinate patient recruitment and data integrity.",
+      "average_salary": 1203500,
+      "job_outlook": "Consistent demand in pharmaceutical and medical research.",
+      "duration_years": 4
+    },
+    {
+      "id": "c024",
+      "name": "Public Health Nurse",
+      "sector_id": "s004",
+      "overview": "Work in community and outreach programs promoting preventive health.",
+      "average_salary": 1160000,
+      "job_outlook": "Growing focus on preventive healthcare initiatives.",
+      "duration_years": 4
     }
   ],
-
   "education": [
     {
-      "id": "ed1",
+      "id": "ed001",
       "name": "Bachelor of Finance",
       "description": "Undergraduate degree covering financial management, accounting, and investment principles.",
       "nqf_level": 7,
       "duration_years": 4,
-      "career_ids": ["c1", "c2", "c3"]
+      "career_ids": ["c001", "c002", "c003", "c004"]
     },
     {
-      "id": "ed2",
-      "name": "Master of Business Administration",
+      "id": "ed002",
+      "name": "Master of Business Administration (MBA)",
       "description": "Postgraduate program emphasizing corporate leadership and strategy.",
       "nqf_level": 9,
       "duration_years": 2,
-      "career_ids": ["c1", "c2"]
+      "career_ids": ["c001", "c002", "c004"]
     },
     {
-      "id": "ed3",
+      "id": "ed003",
       "name": "Bachelor of Computer Science",
       "description": "Core foundation for programming, systems design, and algorithms.",
       "nqf_level": 7,
       "duration_years": 4,
-      "career_ids": ["c4", "c5", "c6"]
+      "career_ids": ["c007", "c008", "c009", "c010", "c011", "c012"]
     },
     {
-      "id": "ed4",
+      "id": "ed004",
       "name": "Bachelor of Engineering",
       "description": "Comprehensive degree in engineering design and theory.",
       "nqf_level": 8,
       "duration_years": 5,
-      "career_ids": ["c7", "c8", "c9"]
+      "career_ids": ["c013", "c014", "c015", "c016", "c017", "c018"]
     },
     {
-      "id": "ed5",
+      "id": "ed005",
       "name": "Bachelor of Nursing",
       "description": "Prepares students for registered nursing practice in clinical settings.",
       "nqf_level": 7,
       "duration_years": 4,
-      "career_ids": ["c10", "c12"]
+      "career_ids": ["c019", "c020", "c021", "c022", "c024"]
     },
     {
-      "id": "ed6",
-      "name": "Master of Nursing Practice",
+      "id": "ed006",
+      "name": "Master of Nursing Practice (NP)",
       "description": "Advanced nursing program for specialized clinical care.",
       "nqf_level": 9,
       "duration_years": 6,
-      "career_ids": ["c11"]
+      "career_ids": ["c020"]
     },
-
-
-
     {
-      "id": "ed7",
+      "id": "ed007",
       "name": "BSc Actuarial Science",
       "description": "Mathematics, statistics and finance focused degree for actuarial careers.",
       "nqf_level": 8,
       "duration_years": 4,
-      "career_ids": ["c14"]
+      "career_ids": ["c005"]
     },
     {
-      "id": "ed8",
+      "id": "ed008",
       "name": "Diploma in Risk Management",
       "description": "Practical coursework in risk frameworks, compliance and quantitative risk assessment.",
       "nqf_level": 7,
       "duration_years": 2,
-      "career_ids": ["c13"]
+      "career_ids": ["c004"]
     },
     {
-      "id": "ed9",
+      "id": "ed009",
       "name": "BSc Cloud Computing / DevOps",
       "description": "Cloud architectures, distributed systems and DevOps practices.",
       "nqf_level": 7,
       "duration_years": 4,
-      "career_ids": ["c15"]
+      "career_ids": ["c010", "c011"]
     },
     {
-      "id": "ed10",
+      "id": "ed010",
       "name": "MSc Machine Learning",
       "description": "Advanced machine learning, deep learning and deployment of AI systems.",
       "nqf_level": 9,
       "duration_years": 2,
-      "career_ids": ["c16"]
+      "career_ids": ["c009"]
     },
     {
-      "id": "ed11",
+      "id": "ed011",
       "name": "BEng Industrial Engineering",
       "description": "Optimize processes and systems with engineering and operations research tools.",
       "nqf_level": 8,
       "duration_years": 5,
-      "career_ids": ["c17"]
+      "career_ids": ["c016"]
     },
     {
-      "id": "ed12",
+      "id": "ed012",
       "name": "BEng Environmental Engineering",
       "description": "Environmental systems, water and waste management, and remediation techniques.",
       "nqf_level": 8,
       "duration_years": 5,
-      "career_ids": ["c18"]
+      "career_ids": ["c017"]
     },
     {
-      "id": "ed13",
+      "id": "ed013",
       "name": "Postgraduate Diploma: Critical Care Nursing",
       "description": "Advanced clinical training for ICU and high-dependency nursing practice.",
       "nqf_level": 9,
       "duration_years": 1,
-      "career_ids": ["c19"]
+      "career_ids": ["c021"]
     },
     {
-      "id": "ed14",
+      "id": "ed014",
       "name": "MEd / Postgrad Diploma in Nursing Education",
       "description": "Pedagogy, curriculum design and clinical teaching for nurse educators.",
       "nqf_level": 9,
       "duration_years": 2,
-      "career_ids": ["c20"]
+      "career_ids": ["c022"]
+    },
+    {
+      "id": "ed015",
+      "name": "MSc Financial Engineering / Quant Finance",
+      "description": "Advanced mathematics, programming, and financial theory for quantitative roles.",
+      "nqf_level": 9,
+      "duration_years": 2,
+      "career_ids": ["c006"]
+    },
+    {
+      "id": "ed016",
+      "name": "BSc Biomedical Engineering",
+      "description": "Engineering principles applied to biology and medical systems.",
+      "nqf_level": 8,
+      "duration_years": 5,
+      "career_ids": ["c018"]
+    },
+    {
+      "id": "ed017",
+      "name": "Diploma in Clinical Research",
+      "description": "Training in Good Clinical Practice (GCP), trial design, and regulatory affairs.",
+      "nqf_level": 6,
+      "duration_years": 2,
+      "career_ids": ["c023"]
     }
   ],
-
   "skills": [
-    { "id": "sk1", "name": "Financial Modeling", "description": "Analyze company performance using spreadsheets and valuation techniques.", "career_ids": ["c1", "c2", "c3"] },
-    { "id": "sk2", "name": "Python Programming", "description": "Develop applications, perform automation, and analyze data.", "career_ids": ["c4", "c5", "c6"] },
-    { "id": "sk3", "name": "Data Visualization", "description": "Present data insights using dashboards and reports.", "career_ids": ["c5"] },
-    { "id": "sk4", "name": "Cybersecurity Fundamentals", "description": "Identify vulnerabilities and implement secure systems.", "career_ids": ["c6"] },
-    { "id": "sk5", "name": "Project Management", "description": "Plan, organize, and lead projects effectively.", "career_ids": ["c7", "c8", "c9"] },
-    { "id": "sk6", "name": "AutoCAD", "description": "Design and simulate engineering structures and systems.", "career_ids": ["c7", "c8", "c9"] },
-    { "id": "sk7", "name": "Clinical Care", "description": "Deliver evidence-based nursing care and interventions.", "career_ids": ["c10", "c11", "c12"] },
-    { "id": "sk8", "name": "Patient Communication", "description": "Effectively engage with patients and healthcare teams.", "career_ids": ["c10", "c11", "c12"] },
-
-    
-
-    { "id": "sk9", "name": "Risk Quantification", "description": "Model financial risk with statistical techniques and stress testing.", "career_ids": ["c13", "c14"] },
-    { "id": "sk10", "name": "Actuarial Modeling", "description": "Life contingencies, pricing and reserving techniques.", "career_ids": ["c14"] },
-    { "id": "sk11", "name": "Cloud Architecture", "description": "Design cloud platforms, IaC and multi-cloud strategies.", "career_ids": ["c15"] },
-    { "id": "sk12", "name": "MLOps & Model Deployment", "description": "Productionize ML models, monitoring and data pipelines.", "career_ids": ["c16"] },
-    { "id": "sk13", "name": "Lean Manufacturing", "description": "Process optimization and waste reduction techniques.", "career_ids": ["c17"] },
-    { "id": "sk14", "name": "Environmental Impact Assessment", "description": "Assess and mitigate environmental effects in projects.", "career_ids": ["c18"] },
-    { "id": "sk15", "name": "Advanced Life Support (ALS)", "description": "Critical care procedures and monitoring for ICU nursing.", "career_ids": ["c19"] },
-    { "id": "sk16", "name": "Clinical Teaching & Assessment", "description": "Educational methods for clinical practice and assessment.", "career_ids": ["c20"] }
+    {
+      "id": "sk001",
+      "name": "Financial Modeling",
+      "description": "Analyze company performance using spreadsheets and valuation techniques.",
+      "career_ids": ["c001", "c002", "c003", "c004", "c006"]
+    },
+    {
+      "id": "sk002",
+      "name": "Advanced Excel (VBA & Macros)",
+      "description": "Build complex spreadsheets, macros, pivot tables and automation for analysis.",
+      "career_ids": ["c001", "c002", "c003"]
+    },
+    {
+      "id": "sk003",
+      "name": "Valuation & DCF",
+      "description": "Perform company valuation using DCF, comparable analysis, and precedent transactions.",
+      "career_ids": ["c001", "c002"]
+    },
+    {
+      "id": "sk004",
+      "name": "Accounting Principles (IFRS/GAAP)",
+      "description": "Understand financial statements, consolidations, and accounting treatments.",
+      "career_ids": ["c001", "c002", "c003", "c004"]
+    },
+    {
+      "id": "sk005",
+      "name": "Mergers & Acquisitions (M&A) Execution",
+      "description": "Run due diligence, build transaction models, and prepare deal materials.",
+      "career_ids": ["c002", "c001", "c004", "c006"]
+    },
+    {
+      "id": "sk006",
+      "name": "Portfolio Management",
+      "description": "Construct and manage diversified investment portfolios aligned to risk-return objectives.",
+      "career_ids": ["c001", "c003"]
+    },
+    {
+      "id": "sk007",
+      "name": "Regulatory Compliance & Governance",
+      "description": "Implement and monitor regulatory requirements and internal governance frameworks.",
+      "career_ids": ["c004", "c002", "c005"]
+    },
+    {
+      "id": "sk008",
+      "name": "Risk Quantification & Stress Testing",
+      "description": "Model exposures, scenario analysis and stress-testing frameworks (VaR, CVaR).",
+      "career_ids": ["c004", "c005", "c006"]
+    },
+    {
+      "id": "sk009",
+      "name": "Probability & Statistics",
+      "description": "Statistical inference and probabilistic modeling for data-driven decisions.",
+      "career_ids": ["c005", "c006", "c008", "c009"]
+    },
+    {
+      "id": "sk010",
+      "name": "Actuarial Modeling & Reserving",
+      "description": "Pricing, reserving, and life-contingency models used in insurance products.",
+      "career_ids": ["c005"]
+    },
+    {
+      "id": "sk011",
+      "name": "Stochastic Calculus & Time Series",
+      "description": "Mathematics for derivative pricing, time-series forecasting and quantitative models.",
+      "career_ids": ["c006"]
+    },
+    {
+      "id": "sk012",
+      "name": "Python for Finance",
+      "description": "Use Python for quantitative analysis, backtesting and data pipelines.",
+      "career_ids": ["c001", "c006", "c005", "c009"]
+    },
+    {
+      "id": "sk013",
+      "name": "Machine Learning (Applied)",
+      "description": "Implement predictive models and feature engineering for business problems.",
+      "career_ids": ["c009", "c008", "c006"]
+    },
+    {
+      "id": "sk014",
+      "name": "Data Visualization & BI (Tableau/PowerBI)",
+      "description": "Create dashboards and visual analytics to communicate insights.",
+      "career_ids": ["c008", "c001", "c004", "c023", "c024"]
+    },
+    {
+      "id": "sk015",
+      "name": "SQL & Database Management",
+      "description": "Design and query relational databases and optimize complex queries.",
+      "career_ids": ["c007", "c008", "c009", "c010", "c011"]
+    },
+    {
+      "id": "sk016",
+      "name": "Backend API Development (REST/GraphQL)",
+      "description": "Design and implement reliable APIs, authentication, versioning and documentation.",
+      "career_ids": ["c007", "c010", "c011"]
+    },
+    {
+      "id": "sk017",
+      "name": "Frontend Frameworks (React/Vue)",
+      "description": "Build responsive and interactive web UIs using modern JavaScript frameworks.",
+      "career_ids": ["c007"]
+    },
+    {
+      "id": "sk018",
+      "name": "System Architecture & Design",
+      "description": "High-level system design, microservices, scalability, and tradeoffs.",
+      "career_ids": ["c007", "c010", "c011", "c009"]
+    },
+    {
+      "id": "sk019",
+      "name": "Cloud Architecture (AWS/Azure/GCP)",
+      "description": "Design cloud-native solutions, IaC patterns and cost optimization.",
+      "career_ids": ["c010", "c011", "c009"]
+    },
+    {
+      "id": "sk020",
+      "name": "CI/CD & Automation (Jenkins/GitLab/Terraform)",
+      "description": "Build automated pipelines for testing, deployment and infrastructure provisioning.",
+      "career_ids": ["c011", "c010", "c007"]
+    },
+    {
+      "id": "sk021",
+      "name": "Containerization & Orchestration (Docker/Kubernetes)",
+      "description": "Package applications and orchestrate them at scale in production.",
+      "career_ids": ["c011", "c010", "c009"]
+    },
+    {
+      "id": "sk022",
+      "name": "Security Engineering & Threat Modelling",
+      "description": "Design systems with security-by-design, threat models and secure code practices.",
+      "career_ids": ["c012", "c010", "c011"]
+    },
+    {
+      "id": "sk023",
+      "name": "Penetration Testing & Vulnerability Assessment",
+      "description": "Run simulated attacks and report remediation for improved security posture.",
+      "career_ids": ["c012"]
+    },
+    {
+      "id": "sk024",
+      "name": "Incident Response & Forensics",
+      "description": "Detect, contain, and investigate security incidents and breaches.",
+      "career_ids": ["c012", "c010"]
+    },
+    {
+      "id": "sk025",
+      "name": "Network Engineering & Protocols",
+      "description": "Understanding of TCP/IP, routing, switching and network design for secure infrastructures.",
+      "career_ids": ["c012", "c010"]
+    },
+    {
+      "id": "sk026",
+      "name": "CAD / Simulation (SolidWorks/ANSYS)",
+      "description": "Design and simulate mechanical systems, stress analysis and prototyping.",
+      "career_ids": ["c013", "c015", "c018"]
+    },
+    {
+      "id": "sk027",
+      "name": "Materials Science & Failure Analysis",
+      "description": "Select materials and analyze failure modes for robust product design.",
+      "career_ids": ["c013", "c018"]
+    },
+    {
+      "id": "sk028",
+      "name": "Control Systems & PLC Programming",
+      "description": "Design feedback systems and program industrial controllers.",
+      "career_ids": ["c015", "c013"]
+    },
+    {
+      "id": "sk029",
+      "name": "Hydrology & Hydraulics",
+      "description": "Modeling water flow, drainage systems, and water resource infrastructure.",
+      "career_ids": ["c014", "c017"]
+    },
+    {
+      "id": "sk030",
+      "name": "Structural Analysis & Design",
+      "description": "Design load-bearing structures and ensure compliance with codes and safety factors.",
+      "career_ids": ["c014"]
+    },
+    {
+      "id": "sk031",
+      "name": "Project Management (PMP/Scrum)",
+      "description": "Plan, track and deliver projects using agile and waterfall methodologies.",
+      "career_ids": ["c013", "c014", "c015", "c016", "c017", "c018", "c011", "c002"]
+    },
+    {
+      "id": "sk032",
+      "name": "Lean Manufacturing & Six Sigma",
+      "description": "Process improvement methods to reduce waste and improve quality.",
+      "career_ids": ["c016", "c013", "c015"]
+    },
+    {
+      "id": "sk033",
+      "name": "Supply Chain Optimization & Logistics",
+      "description": "Forecasting, inventory management and end-to-end supply chain solutions.",
+      "career_ids": ["c016"]
+    },
+    {
+      "id": "sk034",
+      "name": "Environmental Impact Assessment (EIA)",
+      "description": "Assess and mitigate environmental effects in engineering projects.",
+      "career_ids": ["c017", "c014"]
+    },
+    {
+      "id": "sk035",
+      "name": "Renewable Energy Systems (Solar/Wind/Hydro)",
+      "description": "Design and integrate renewable generation into power systems.",
+      "career_ids": ["c015", "c017"]
+    },
+    {
+      "id": "sk036",
+      "name": "Medical Device Design & Regulatory (FDA/CE)",
+      "description": "Design, test and navigate regulatory pathways for healthcare devices.",
+      "career_ids": ["c018"]
+    },
+    {
+      "id": "sk037",
+      "name": "Biomechanics & Bioinstrumentation",
+      "description": "Design sensors and instruments for patient monitoring and diagnostics.",
+      "career_ids": ["c018"]
+    },
+    {
+      "id": "sk038",
+      "name": "Clinical Care & Patient Assessment",
+      "description": "Deliver evidence-based nursing care, triage and assessment.",
+      "career_ids": ["c019", "c020", "c021"]
+    },
+    {
+      "id": "sk039",
+      "name": "Patient Communication & Cultural Competence",
+      "description": "Communicate effectively with patients, families, and teams across diverse backgrounds.",
+      "career_ids": ["c019", "c020", "c024", "c023"]
+    },
+    {
+      "id": "sk040",
+      "name": "Advanced Life Support (ACLS/ALS)",
+      "description": "Advanced cardiac life support, airway management and emergency response.",
+      "career_ids": ["c021", "c020"]
+    },
+    {
+      "id": "sk041",
+      "name": "Pharmacology & Medication Management",
+      "description": "Safe medication administration, interactions and dosing for clinical practice.",
+      "career_ids": ["c019", "c021", "c020"]
+    },
+    {
+      "id": "sk042",
+      "name": "Clinical Teaching & Assessment",
+      "description": "Educational methods for clinical practice, OSCEs and assessment techniques.",
+      "career_ids": ["c022", "c020", "c019"]
+    },
+    {
+      "id": "sk043",
+      "name": "Good Clinical Practice (GCP) & Trial Management",
+      "description": "Standards for conducting ethical clinical trials and data integrity.",
+      "career_ids": ["c023", "c018"]
+    },
+    {
+      "id": "sk044",
+      "name": "Protocol Development & Regulatory Submissions",
+      "description": "Write clinical trial protocols and prepare regulatory dossiers.",
+      "career_ids": ["c023"]
+    },
+    {
+      "id": "sk045",
+      "name": "Epidemiology & Biostatistics",
+      "description": "Design studies, analyze population health data and interpret public health metrics.",
+      "career_ids": ["c024", "c023", "c020"]
+    },
+    {
+      "id": "sk046",
+      "name": "Patient Recruitment & Retention Strategies",
+      "description": "Design outreach and consent processes to meet trial enrolment targets.",
+      "career_ids": ["c023"]
+    },
+    {
+      "id": "sk047",
+      "name": "Stakeholder Communication & Client Advisory",
+      "description": "Clear communication with clients, boards and external stakeholders.",
+      "career_ids": ["c001", "c002", "c003", "c022"]
+    },
+    {
+      "id": "sk048",
+      "name": "Business Development & Sales for Professional Services",
+      "description": "Identify clients, pitch services and manage client relationships.",
+      "career_ids": ["c002", "c003", "c022"]
+    },
+    {
+      "id": "sk049",
+      "name": "Ethical AI & Model Governance",
+      "description": "Design and run AI responsibly with bias mitigation and model governance controls.",
+      "career_ids": ["c009", "c006"]
+    },
+    {
+      "id": "sk050",
+      "name": "Model Validation & Backtesting",
+      "description": "Validate models, run backtests and ensure production reliability.",
+      "career_ids": ["c006", "c009", "c005"]
+    },
+    {
+      "id": "sk051",
+      "name": "API Testing & Automation",
+      "description": "Automated testing for APIs and integration points.",
+      "career_ids": ["c007", "c011"]
+    },
+    {
+      "id": "sk052",
+      "name": "Observability & Monitoring (Prometheus/Grafana)",
+      "description": "Implement logs/metrics/tracing for reliable production operations.",
+      "career_ids": ["c011", "c010", "c009"]
+    },
+    {
+      "id": "sk053",
+      "name": "Clinical Documentation & EMR Systems",
+      "description": "Navigate electronic medical records and maintain accurate clinical documentation.",
+      "career_ids": ["c019", "c023", "c020"]
+    },
+    {
+      "id": "sk054",
+      "name": "Scripting & Automation (Bash/Python)",
+      "description": "Automate routine tasks, parsing files and building small utilities for operations.",
+      "career_ids": ["c011", "c010", "c007", "c006"]
+    },
+    {
+      "id": "sk055",
+      "name": "Negotiation & Transaction Structuring",
+      "description": "Lead deal negotiation, term sheet structuring and legal coordination.",
+      "career_ids": ["c002", "c001"]
+    },
+    {
+      "id": "sk056",
+      "name": "Technical Writing & Documentation",
+      "description": "Produce crisp technical and regulatory documentation for teams and audits.",
+      "career_ids": ["c011", "c023", "c018", "c010"]
+    },
+    {
+      "id": "sk057",
+      "name": "Clinical Quality Improvement",
+      "description": "Lead audits, QA processes and quality improvement initiatives in clinical settings.",
+      "career_ids": ["c019", "c021", "c022"]
+    },
+    {
+      "id": "sk058",
+      "name": "Compensation & Benefits Advisory",
+      "description": "Design compensation structures and advise on benefits for clients (useful in financial advisory roles).",
+      "career_ids": ["c003", "c001"]
+    }
   ],
-
   "specializations": [
-    { "id": "sp1", "career_id": "c4", "name": "Frontend Developer", "description": "Specialize in building interactive web interfaces using modern frameworks." },
-    { "id": "sp2", "career_id": "c4", "name": "Backend Developer", "description": "Design scalable backend systems and APIs." },
-    { "id": "sp3", "career_id": "c5", "name": "Business Data Analyst", "description": "Focus on business intelligence and data-driven strategy." },
-    { "id": "sp4", "career_id": "c6", "name": "Penetration Tester", "description": "Simulate cyber attacks to evaluate system security." },
-    { "id": "sp5", "career_id": "c7", "name": "Robotics Engineer", "description": "Design autonomous mechanical systems and robots." },
-    { "id": "sp6", "career_id": "c8", "name": "Structural Engineer", "description": "Specialize in bridge and building design." },
-    { "id": "sp7", "career_id": "c9", "name": "Power Systems Engineer", "description": "Work on large-scale power generation and distribution systems." },
-    { "id": "sp8", "career_id": "c11", "name": "Pediatric Nurse Practitioner", "description": "Provide healthcare to infants, children, and adolescents." },
-    { "id": "sp9", "career_id": "c12", "name": "Community Health Coordinator", "description": "Lead health education and outreach programs." },
-
-
-
-    { "id": "sp10", "career_id": "c13", "name": "Enterprise Risk Specialist", "description": "Focus on enterprise-wide risk frameworks and governance." },
-    { "id": "sp11", "career_id": "c14", "name": "Pension & Life Actuary", "description": "Specialize in pensions, life insurance and longevity risk." },
-    { "id": "sp12", "career_id": "c15", "name": "Cloud Security Architect", "description": "Design secure cloud infrastructures and controls." },
-    { "id": "sp13", "career_id": "c16", "name": "Computer Vision Specialist", "description": "Focus on ML for image/video systems and perception." },
-    { "id": "sp14", "career_id": "c17", "name": "Supply Chain Systems", "description": "Specialize in end-to-end supply-chain optimization." },
-    { "id": "sp15", "career_id": "c18", "name": "Water Resources Specialist", "description": "Design systems for sustainable water management." },
-    { "id": "sp16", "career_id": "c19", "name": "Trauma & ICU Specialist", "description": "Advanced critical care specialization in trauma and ICU." },
-    { "id": "sp17", "career_id": "c20", "name": "Simulation-Based Educator", "description": "Design simulation and OSCE-based clinical training." }
+    {
+      "id": "sp001",
+      "career_id": "c007",
+      "name": "Frontend Developer",
+      "description": "Specialize in building interactive web interfaces using modern frameworks."
+    },
+    {
+      "id": "sp002",
+      "career_id": "c007",
+      "name": "Backend Developer",
+      "description": "Design scalable backend systems and APIs."
+    },
+    {
+      "id": "sp003",
+      "career_id": "c008",
+      "name": "Business Data Analyst",
+      "description": "Focus on business intelligence and data-driven strategy."
+    },
+    {
+      "id": "sp004",
+      "career_id": "c012",
+      "name": "Penetration Tester",
+      "description": "Simulate cyber attacks to evaluate system security."
+    },
+    {
+      "id": "sp005",
+      "career_id": "c013",
+      "name": "Robotics Engineer",
+      "description": "Design autonomous mechanical systems and robots."
+    },
+    {
+      "id": "sp006",
+      "career_id": "c014",
+      "name": "Structural Engineer",
+      "description": "Specialize in bridge and building design."
+    },
+    {
+      "id": "sp007",
+      "career_id": "c015",
+      "name": "Power Systems Engineer",
+      "description": "Work on large-scale power generation and distribution systems."
+    },
+    {
+      "id": "sp008",
+      "career_id": "c020",
+      "name": "Pediatric Nurse Practitioner",
+      "description": "Provide healthcare to infants, children, and adolescents."
+    },
+    {
+      "id": "sp009",
+      "career_id": "c024",
+      "name": "Community Health Coordinator",
+      "description": "Lead health education and outreach programs."
+    },
+    {
+      "id": "sp010",
+      "career_id": "c004",
+      "name": "Enterprise Risk Specialist",
+      "description": "Focus on enterprise-wide risk frameworks and governance."
+    },
+    {
+      "id": "sp011",
+      "career_id": "c005",
+      "name": "Pension & Life Actuary",
+      "description": "Specialize in pensions, life insurance and longevity risk."
+    },
+    {
+      "id": "sp012",
+      "career_id": "c010",
+      "name": "Cloud Security Architect",
+      "description": "Design secure cloud infrastructures and controls."
+    },
+    {
+      "id": "sp013",
+      "career_id": "c009",
+      "name": "Computer Vision Specialist",
+      "description": "Focus on ML for image/video systems and perception."
+    },
+    {
+      "id": "sp014",
+      "career_id": "c016",
+      "name": "Supply Chain Systems",
+      "description": "Specialize in end-to-end supply-chain optimization."
+    },
+    {
+      "id": "sp015",
+      "career_id": "c017",
+      "name": "Water Resources Specialist",
+      "description": "Design systems for sustainable water management."
+    },
+    {
+      "id": "sp016",
+      "career_id": "c021",
+      "name": "Trauma & ICU Specialist",
+      "description": "Advanced critical care specialization in trauma and ICU."
+    },
+    {
+      "id": "sp017",
+      "career_id": "c022",
+      "name": "Simulation-Based Educator",
+      "description": "Design simulation and OSCE-based clinical training."
+    },
+    {
+      "id": "sp018",
+      "career_id": "c006",
+      "name": "Derivative Pricing Specialist",
+      "description": "Focus on developing and implementing advanced derivative pricing models."
+    },
+    {
+      "id": "sp019",
+      "career_id": "c011",
+      "name": "Kubernetes and Containerization",
+      "description": "Specialize in deploying and managing containerized applications at scale."
+    },
+    {
+      "id": "sp020",
+      "career_id": "c018",
+      "name": "Bio-instrumentation Design",
+      "description": "Focus on developing electronic and software systems for medical monitoring and diagnosis."
+    },
+    {
+      "id": "sp021",
+      "career_id": "c023",
+      "name": "Oncology Trial Coordinator",
+      "description": "Specialize in managing complex clinical trials for cancer treatments."
+    }
   ],
-
   "roadmaps": [
     {
-      "id": "r1",
-      "career_id": "c1",
-      "description": "Develop strong analytical and financial modeling skills with real-world experience.",
-      "education_ids": ["ed1"],
-      "skill_ids": ["sk1"],
+      "id": "r001",
+      "career_id": "c001",
+      "description": "Phase 1 — Foundation (Years 1-2): Complete a Bachelor of Finance (ed001). Learn Financial Modeling (sk001), Advanced Excel (sk002), Accounting Principles (sk004), and basic SQL (sk015). Take online courses in corporate finance and valuation. Acquire internships in corporate finance.\n\nPhase 2 — Early Career (Years 2-4): Join as a Junior/Research Analyst. Build pitchbooks, prepare financial statements, and run DCF/valuation (sk003). Expand Python for Finance (sk012) capabilities and visualization with Tableau/PowerBI (sk014). Start CFA Level I preparation.\n\nPhase 3 — Intermediate (Years 4-7): Move to Senior Analyst; lead forecasting, performance analysis, and portfolio reviews. Add Regulatory Compliance (sk007) knowledge and stakeholder advisory (sk047). Start mentoring juniors; develop domain expertise (e.g., TMT, Healthcare).\n\nPhase 4 — Advanced (Years 7-12): Transition to Portfolio Manager / Senior Financial Analyst. Lead strategic planning, capital allocation decisions, and M&A support (sk005). Consider MBA (ed002) or CFA charter for promotion.\n\nPhase 5 — Leadership / Specialist: Become Head of Research or FP&A Director. Drive investment strategy, manage teams and client relationships, partner with C-suite. Focus on Risk Quantification (sk008) and advanced model governance.",
+      "education_ids": ["ed001", "ed002"],
+      "skill_ids": ["sk001", "sk002", "sk003", "sk004", "sk012", "sk014", "sk047", "sk006", "sk008", "sk055"],
       "specialization_ids": []
     },
     {
-      "id": "r2",
-      "career_id": "c4",
-      "description": "Master software development principles and specialize in full-stack or backend systems.",
-      "education_ids": ["ed3"],
-      "skill_ids": ["sk2"],
-      "specialization_ids": ["sp1", "sp2"]
-    },
-    {
-      "id": "r3",
-      "career_id": "c5",
-      "description": "Build analytical and visualization skills to drive business decisions.",
-      "education_ids": ["ed3"],
-      "skill_ids": ["sk2", "sk3"],
-      "specialization_ids": ["sp3"]
-    },
-    {
-      "id": "r4",
-      "career_id": "c6",
-      "description": "Gain expertise in system security and network defense.",
-      "education_ids": ["ed3"],
-      "skill_ids": ["sk4"],
-      "specialization_ids": ["sp4"]
-    },
-    {
-      "id": "r5",
-      "career_id": "c7",
-      "description": "Develop design and prototyping skills for mechanical innovation.",
-      "education_ids": ["ed4"],
-      "skill_ids": ["sk5", "sk6"],
-      "specialization_ids": ["sp5"]
-    },
-    {
-      "id": "r6",
-      "career_id": "c8",
-      "description": "Plan and execute infrastructure projects from design to implementation.",
-      "education_ids": ["ed4"],
-      "skill_ids": ["sk5", "sk6"],
-      "specialization_ids": ["sp6"]
-    },
-    {
-      "id": "r7",
-      "career_id": "c9",
-      "description": "Work on power generation, automation, and control systems.",
-      "education_ids": ["ed4"],
-      "skill_ids": ["sk5", "sk6"],
-      "specialization_ids": ["sp7"]
-    },
-    {
-      "id": "r8",
-      "career_id": "c10",
-      "description": "Train in patient care, medical procedures, and communication skills.",
-      "education_ids": ["ed5"],
-      "skill_ids": ["sk7", "sk8"],
+      "id": "r002",
+      "career_id": "c002",
+      "description": "Phase 1 — Foundation (Years 1-2): Obtain a Bachelor of Finance (ed001). Master Financial Modeling (sk001), Valuation (sk003), Advanced Excel (sk002) and Accounting (sk004). Network and secure top-tier internships in investment banking.\n\nPhase 2 — Analyst Associate (Years 2-4): Work on pitch books, perform due diligence and M&A execution (sk005). Hone negotiation and transaction structuring (sk055). Work long deals and learn client management.\n\nPhase 3 — Associate / VP (Years 4-8): Lead deal execution, manage junior team members, own sections of syndication and capital markets work. Add Regulatory Compliance (sk007) and Risk Quantification basics (sk008).\n\nPhase 4 — Senior (Years 8-12): Transition to Director; originate deals, manage key client relationships, and recruit/lead deal teams. Add Business Development (sk048) and client advisory (sk047).\n\nPhase 5 — Managing Director / Executive: Run industry coverage, influence strategy, lead cross-border transactions and sit on investment committees. Focus on governance and enterprise-level risk (sk007).",
+      "education_ids": ["ed001", "ed002"],
+      "skill_ids": ["sk001", "sk002", "sk003", "sk005", "sk055", "sk047", "sk048", "sk004", "sk007", "sk026"],
       "specialization_ids": []
     },
     {
-      "id": "r9",
-      "career_id": "c11",
-      "description": "Advance clinical practice through postgraduate training and certification.",
-      "education_ids": ["ed6"],
-      "skill_ids": ["sk7", "sk8"],
-      "specialization_ids": ["sp8"]
+      "id": "r003",
+      "career_id": "c003",
+      "description": "Phase 1 — Foundation (Years 1-2): Complete Bachelor of Finance (ed001). Learn Investment Planning (sk006), Financial Modeling (sk001) and client communications (sk047). Pursue CFP or local planning licences.\n\nPhase 2 — Early Practice (Years 2-4): Work as junior planner or paraplanner; build financial plans, tax-aware strategies and client reports. Focus on client acquisition techniques (sk048) and compensation/benefits advice (sk058).\n\nPhase 3 — Independent Planner / Senior Advisor (Years 4-8): Grow a client book, specialize (e.g., retirement planning, HNW clients), and manage multi-disciplinary teams (legal/tax). Use advanced modeling (sk001) and portfolio allocation (sk006).\n\nPhase 4 — Practice Owner / Director: Launch an RIA or advisory group; refine service offerings, compliance and CRM systems. Consider team certifications and advanced training.\n\nPhase 5 — Executive / Thought Leadership: Become a recognized advisor, publish thought leadership, and support policy / industry groups. Expand into family office advisory and complex estate design.",
+      "education_ids": ["ed001"],
+      "skill_ids": ["sk006", "sk001", "sk047", "sk048", "sk058", "sk002", "sk004", "sk003", "sk014", "sk026"],
+      "specialization_ids": []
     },
     {
-      "id": "r10",
-      "career_id": "c12",
-      "description": "Focus on community care and public health leadership.",
-      "education_ids": ["ed5"],
-      "skill_ids": ["sk7", "sk8"],
-      "specialization_ids": ["sp9"]
-    },
-
-   
-
-    {
-      "id": "r11",
-      "career_id": "c13",
-      "description": "Build a career in risk management: foundations in risk frameworks, applied modeling, certifications, hands-on stress-testing projects, and senior governance roles.",
-      "education_ids": ["ed1", "ed8"],
-      "skill_ids": ["sk9"],
-      "specialization_ids": ["sp10"]
+      "id": "r004",
+      "career_id": "c004",
+      "description": "Phase 1 — Foundation (Years 1-3): Study finance or risk (ed001/ed008). Learn Risk Quantification (sk008), regulatory frameworks (sk007) and statistical basics (sk009).\n\nPhase 2 — Risk Analyst (Years 2-5): Work in credit/market/operational risk teams, build stress tests and scenario analyses. Become proficient with reporting tools (sk014) and data sources.\n\nPhase 3 — Specialist (Years 5-9): Own risk models, lead remediation programs and integrate risk into capital planning. Gain certifications like FRM/PRM and deepen governance skills.\n\nPhase 4 — Head of Risk / Enterprise Risk: Implement enterprise risk frameworks (sp010), embed risk appetite and present to Boards. Lead regulatory engagements.\n\nPhase 5 — CRO / Executive: Shape enterprise strategy, manage enterprise-wide capital and risk exposures, and champion risk culture and resilience programs.",
+      "education_ids": ["ed001", "ed008"],
+      "skill_ids": ["sk008", "sk007", "sk009", "sk014", "sk026", "sk001", "sk010", "sk047", "sk005", "sk050"],
+      "specialization_ids": ["sp010"]
     },
     {
-      "id": "r12",
-      "career_id": "c14",
-      "description": "Actuarial pathway: rigorous actuarial science degree, professional exams, internships in insurance, modelling & pricing experience, then senior actuarial advisory roles.",
-      "education_ids": ["ed7"],
-      "skill_ids": ["sk10", "sk9"],
-      "specialization_ids": ["sp11"]
+      "id": "r005",
+      "career_id": "c005",
+      "description": "Phase 1 — Foundation (Years 1-3): Complete BSc Actuarial Science (ed007). Master Probability & Statistics (sk009), Actuarial Modeling (sk010) and programming basics (sk012).\n\nPhase 2 — Exam Track & Internship (Years 2-5): Pass actuarial exams, gain credits via work-based assessments, apply reserving and pricing models. Learn model validation (sk050).\n\nPhase 3 — Qualified Actuary (Years 5-9): Lead pricing, product design and capital modelling. Specialize in pensions or life insurance (sp011) and regulatory reporting.\n\nPhase 4 — Senior Actuary / Consulting: Lead teams, provide advisory to executive clients, and design hedging strategies. Integrate stochastic calculus (sk011) for advanced work.\n\nPhase 5 — Fellowship / Thought Leadership: Achieve Fellowship status, advise boards, publish research and shape industry best practices.",
+      "education_ids": ["ed007"],
+      "skill_ids": ["sk010", "sk009", "sk012", "sk050", "sk011", "sk001", "sk007", "sk017", "sk047", "sk055"],
+      "specialization_ids": ["sp011"]
     },
     {
-      "id": "r13",
-      "career_id": "c15",
-      "description": "Cloud architect journey: cloud degree, certificates (AWS/Azure/GCP), DevOps projects, designing multi-cloud platforms, and enterprise architecture leadership.",
-      "education_ids": ["ed9"],
-      "skill_ids": ["sk11"],
-      "specialization_ids": ["sp12"]
+      "id": "r006",
+      "career_id": "c006",
+      "description": "Phase 1 — Foundation (Years 1-3): Obtain MSc Financial Engineering (ed015) or a quantitative degree. Master Python (sk012), Stochastic Calculus (sk011) and Financial Modeling (sk001).\n\nPhase 2 — Quant Developer / Researcher (Years 2-5): Build pricing libraries, backtest strategies and use model validation (sk050). Become familiar with low-latency systems and C++/Python.\n\nPhase 3 — Desk Integration (Years 5-9): Work closely with traders to implement models, perform intraday P&L analysis, and refine hedging strategies (sk005).\n\nPhase 4 — Lead Quant / Head of Model Development: Oversee model risk, mentor quants, and coordinate cross-functional model delivery.\n\nPhase 5 — Chief Quant / Proprietary Trading: Lead quantitative research, set research agendas, and manage significant books. Publish research and collaborate with academic partners.",
+      "education_ids": ["ed015"],
+      "skill_ids": ["sk011", "sk012", "sk001", "sk050", "sk009", "sk049", "sk013", "sk017", "sk054", "sk055"],
+      "specialization_ids": ["sp018"]
     },
     {
-      "id": "r14",
-      "career_id": "c16",
-      "description": "AI engineer progression: MSc in ML, foundational ML engineering skills, practical MLOps & deployment experience, specialization in computer vision/NLP, lead ML engineer roles.",
-      "education_ids": ["ed10"],
-      "skill_ids": ["sk12"],
-      "specialization_ids": ["sp13"]
+      "id": "r007",
+      "career_id": "c007",
+      "description": "Phase 1 — Foundation (Years 1-2): Complete Bachelor of Computer Science (ed003). Learn data structures, algorithms and core languages (Python, Java, JS). Gain proficiency in Frontend (sk017) and Backend (sk016).\n\nPhase 2 — Junior Developer (Years 2-4): Build full-stack projects, understand SQL (sk015), API development (sk016) and version control. Participate in code reviews and tests (sk051).\n\nPhase 3 — Mid-Level (Years 4-7): Own end-to-end features, design services (sk018), and optimize performance. Contribute to architecture decisions and mentor juniors.\n\nPhase 4 — Senior / Tech Lead (Years 7-12): Design system architecture for scale, lead cross-functional teams, and coordinate releases. Deepen cloud knowledge (sk019) and observability (sk052).\n\nPhase 5 — Principal / Engineering Manager: Drive technical strategy, build engineering culture, lead hiring and roadmap prioritization. Option to become an engineering manager or principal engineer.",
+      "education_ids": ["ed003"],
+      "skill_ids": ["sk015", "sk016", "sk017", "sk018", "sk019", "sk020", "sk021", "sk051", "sk052", "sk054"],
+      "specialization_ids": ["sp001", "sp002"]
     },
     {
-      "id": "r15",
-      "career_id": "c17",
-      "description": "Industrial engineering path: degree in industrial engineering, lean and optimization skills, plant projects & internships, supply-chain system specialization, operations leadership.",
-      "education_ids": ["ed11"],
-      "skill_ids": ["sk13"],
-      "specialization_ids": ["sp14"]
+      "id": "r008",
+      "career_id": "c008",
+      "description": "Phase 1 — Foundation (Years 1-2): Complete a quantitative degree or Bachelor of Computer Science (ed003). Learn SQL (sk015), Python for analysis (sk012) and Data Visualization (sk014).\n\nPhase 2 — Analyst (Years 2-4): Work on data pipelines, ETL, A/B testing and reporting. Own dashboarding and KPI definitions. Learn basic ML (sk013).\n\nPhase 3 — Senior Analyst (Years 4-7): Lead analytics projects, translate business problems into data requirements, and coach junior analysts. Implement scalable data models and warehouses (sk019).\n\nPhase 4 — Analytics Lead / Product Data Scientist (Years 7-12): Set analytics strategy, partner with product and engineering. Use machine learning for predictive analytics and decisioning.\n\nPhase 5 — Head of Data / Analytics Director: Oversee analytics teams, implement data governance, and tie analytics to business outcomes and ROI.",
+      "education_ids": ["ed003"],
+      "skill_ids": ["sk015", "sk012", "sk014", "sk013", "sk018", "sk019", "sk021", "sk052", "sk051", "sk054"],
+      "specialization_ids": ["sp003"]
     },
     {
-      "id": "r16",
-      "career_id": "c18",
-      "description": "Environmental engineering path: degree, fieldwork and EIA training, specialist water/waste projects, policy and sustainability roles, senior environmental consultancy.",
-      "education_ids": ["ed12"],
-      "skill_ids": ["sk14"],
-      "specialization_ids": ["sp15"]
+      "id": "r009",
+      "career_id": "c009",
+      "description": "Phase 1 — Foundation (Years 1-2): Complete MSc Machine Learning (ed010) or a strong CS degree. Master Python (sk012), ML frameworks and statistics (sk009).\n\nPhase 2 — ML Engineer (Years 2-4): Build models, productionize with MLOps techniques (sk020, sk021), and learn deployment patterns and observability (sk052).\n\nPhase 3 — Specialization (Years 4-8): Choose domain (NLP, CV — sp013). Optimize models, address bias and governance (sk049), and implement model validation (sk050).\n\nPhase 4 — Senior ML Engineer / Lead (Years 8-12): Own ML platform architecture, CI/CD for models, and cross-team productization. Mentor teams and conduct research collaborations.\n\nPhase 5 — Director of AI / Research Lead: Set AI strategy, manage data and compute resources, and implement responsible AI governance across the organization.",
+      "education_ids": ["ed010"],
+      "skill_ids": ["sk012", "sk013", "sk020", "sk021", "sk052", "sk049", "sk050", "sk018", "sk015", "sk054"],
+      "specialization_ids": ["sp013"]
     },
     {
-      "id": "r17",
-      "career_id": "c19",
-      "description": "Critical care nursing: nursing degree, critical care postgraduate training, advanced life support skills, rotations in ICU/trauma units, clinical lead roles.",
-      "education_ids": ["ed5", "ed13"],
-      "skill_ids": ["sk15"],
-      "specialization_ids": ["sp16"]
+      "id": "r010",
+      "career_id": "c010",
+      "description": "Phase 1 — Cloud Foundation (Years 1-2): Complete BSc Cloud Computing (ed009). Learn Cloud Architecture (sk019), networking basics (sk025) and scripting (sk054).\n\nPhase 2 — Cloud Engineer (Years 2-4): Implement IaC, manage cloud resources and design resilient architectures (sk019, sk020). Work on cost optimisation and security basics (sk022).\n\nPhase 3 — Cloud Architect (Years 4-8): Design large-scale platforms, multi-cloud patterns, disaster recovery and observability (sk052). Obtain vendor certs (AWS/Azure/GCP).\n\nPhase 4 — Cloud Security & Governance (Years 8-12): Specialize in cloud security architecture (sp012), compliance and incident planning (sk024).\n\nPhase 5 — Enterprise Cloud Strategy: Lead Cloud Center of Excellence, drive organisational cloud adoption, and set multi-year migration roadmaps.",
+      "education_ids": ["ed009"],
+      "skill_ids": ["sk019", "sk025", "sk054", "sk020", "sk022", "sk052", "sk021", "sk018", "sk056", "sk029"],
+      "specialization_ids": ["sp012"]
     },
     {
-      "id": "r18",
-      "career_id": "c20",
-      "description": "Nurse educator journey: nursing foundation, clinical experience, postgraduate teaching qualification, simulation pedagogy, and academic or training program leadership.",
-      "education_ids": ["ed5", "ed14"],
-      "skill_ids": ["sk16"],
-      "specialization_ids": ["sp17"]
+      "id": "r011",
+      "career_id": "c011",
+      "description": "Phase 1 — Systems Foundation (Years 1-2): Complete BSc Cloud/DevOps (ed009) or CS degree. Learn Linux, scripting (sk054), CI/CD (sk020) and containerization (sk021).\n\nPhase 2 — DevOps Engineer (Years 2-5): Build pipelines, IaC and automated testing. Implement monitoring and observability (sk052). Work with Kubernetes (sp019).\n\nPhase 3 — SRE / Platform Engineer (Years 5-9): Improve reliability, runbook design, and incident management. Focus on automation and scaling patterns.\n\nPhase 4 — Platform Lead (Years 9-12): Lead platform teams, own developer experience and observability strategy. Drive cross-team improvements and cost optimization.\n\nPhase 5 — Director of Platform / CTO Track: Oversee engineering platform, SRE culture, and infrastructure strategy across products.",
+      "education_ids": ["ed009", "ed003"],
+      "skill_ids": ["sk020", "sk021", "sk054", "sk052", "sk019", "sk018", "sk015", "sk051", "sk056", "sk011"],
+      "specialization_ids": ["sp019"]
+    },
+    {
+      "id": "r012",
+      "career_id": "c012",
+      "description": "Phase 1 — Foundation (Years 1-2): Obtain Bachelor of Computer Science (ed003). Learn Cybersecurity fundamentals (sk022), networking (sk025) and scripting (sk054).\n\nPhase 2 — Defensive Security (Years 2-5): Work in SOC, SIEM tools and threat intelligence. Build incident response skills (sk024) and run tabletop exercises.\n\nPhase 3 — Offensive & Specialization (Years 5-9): Move into penetration testing, forensics (sk023, sk024), or cloud security (sk022). Obtain certifications (OSCP, CISSP).\n\nPhase 4 — Security Architect / Manager (Years 9-12): Develop enterprise security architecture, secure SDLC and risk assessments. Lead response teams.\n\nPhase 5 — CISO / Security Executive: Drive security strategy, compliance and liaison with executive stakeholders. Influence culture and security investment decisions.",
+      "education_ids": ["ed003"],
+      "skill_ids": ["sk022", "sk025", "sk054", "sk023", "sk024", "sk019", "sk052", "sk011", "sk051", "sk056"],
+      "specialization_ids": ["sp004"]
+    },
+    {
+      "id": "r013",
+      "career_id": "c013",
+      "description": "Phase 1 — Foundation (Years 1-3): Complete Bachelor of Engineering (ed004). Core courses in dynamics, materials and CAD (sk026).\n\nPhase 2 — Junior Design Engineer (Years 2-4): Produce detailed designs, perform tests and contribute to prototyping. Work on machining, BOMs and supplier engagement.\n\nPhase 3 — Mid-Level / Specialist (Years 4-8): Own system-level designs, apply materials science (sk027) and control systems (sk028). Use Lean & Six Sigma (sk032) for process improvements.\n\nPhase 4 — Senior / R&D Lead (Years 8-12): Lead product groups, manage cross-discipline engineering, and drive prototyping and regulatory compliance (sk056).\n\nPhase 5 — Engineering Director / CTO of Product: Oversee product roadmaps, capital planning, and strategic technical decisions. Option to specialize in robotics (sp005).",
+      "education_ids": ["ed004"],
+      "skill_ids": ["sk026", "sk027", "sk028", "sk031", "sk032", "sk054", "sk056", "sk025", "sk013", "sk019"],
+      "specialization_ids": ["sp005"]
+    },
+    {
+      "id": "r014",
+      "career_id": "c014",
+      "description": "Phase 1 — Foundation (Years 1-3): Study civil engineering (ed004). Master structural analysis (sk030), hydrology (sk029) and CAD (sk026).\n\nPhase 2 — Graduate Engineer (Years 2-5): Work under licensed engineers, prepare drawings, and support site supervision. Learn codes and standards.\n\nPhase 3 — Project Engineer / Specialist (Years 5-9): Lead design packages for bridges, highways or water infrastructure. Run EIAs (sk034) and coordinate multi-discipline teams.\n\nPhase 4 — Senior / Chartered Engineer (Years 9-12): Obtain professional licensure, lead complex infrastructure projects and manage client relationships. Use Lean & Six Sigma (sk032) for delivery.\n\nPhase 5 — Partner / Head of Infrastructure: Oversee large programs, shape public policy and lead multi-year capital portfolios.",
+      "education_ids": ["ed004"],
+      "skill_ids": ["sk030", "sk029", "sk026", "sk031", "sk034", "sk032", "sk025", "sk056", "sk013", "sk018"],
+      "specialization_ids": ["sp006"]
+    },
+    {
+      "id": "r015",
+      "career_id": "c015",
+      "description": "Phase 1 — Foundation (Years 1-3): Complete Bachelor of Engineering (ed004) with power electronics and embedded systems. Learn control systems (sk028) and CAD (sk026).\n\nPhase 2 — Field / Implementation (Years 2-5): Work on PLCs, commissioning and power distribution projects. Gain experience in renewable integration (sk035).\n\nPhase 3 — Grid Specialization (Years 5-9): Focus on power systems (sp007), grid stability, and renewable interconnection. Use simulation and protection systems.\n\nPhase 4 — Senior Engineer (Years 9-12): Lead multidisciplinary teams for generation and distribution projects. Drive technical standards and performance metrics.\n\nPhase 5 — Principal Engineer / Technical Director: Lead national-scale power projects, advise on energy strategy and integration of renewable energy technologies.",
+      "education_ids": ["ed004"],
+      "skill_ids": ["sk028", "sk026", "sk035", "sk031", "sk027", "sk025", "sk021", "sk013", "sk056", "sk054"],
+      "specialization_ids": ["sp007"]
+    },
+    {
+      "id": "r016",
+      "career_id": "c016",
+      "description": "Phase 1 — Foundation (Years 1-3): Complete BEng Industrial Engineering (ed011). Learn Lean & Six Sigma (sk032), operations research and data visualization (sk014).\n\nPhase 2 — Process Engineer (Years 2-5): Implement continuous improvement, run Kaizen events and model workflows. Use supply chain tools (sk033).\n\nPhase 3 — Systems Optimization (Years 5-9): Lead cross-site process optimizations, implement automation and advanced analytics.\n\nPhase 4 — Operations / Plant Manager (Years 9-12): Manage production lines, budgets and workforce. Drive performance improvement and capital projects.\n\nPhase 5 — VP Operations / COO Track: Strategically lead manufacturing operations, global supply chains and digital transformation initiatives.",
+      "education_ids": ["ed011"],
+      "skill_ids": ["sk032", "sk031", "sk033", "sk014", "sk018", "sk025", "sk054", "sk013", "sk052", "sk056"],
+      "specialization_ids": ["sp014"]
+    },
+    {
+      "id": "r017",
+      "career_id": "c017",
+      "description": "Phase 1 — Foundation (Years 1-3): Complete BEng Environmental Engineering (ed012). Study hydrology (sk029), EIAs (sk034) and renewable basics (sk035).\n\nPhase 2 — Field Work & Compliance (Years 2-5): Conduct site assessments, prepare EIA reports, and engage regulators. Build project management (sk031) experience.\n\nPhase 3 — Design Specialist (Years 5-9): Design water systems, remediation solutions and sustainable infrastructure. Apply modelling tools and lifecycle analysis.\n\nPhase 4 — Senior Consultant / Project Lead (Years 9-12): Lead multidisciplinary teams on large sustainability projects, manage budgets and stakeholders.\n\nPhase 5 — Policy / Director Level: Influence regional environmental policy, lead sustainability programs and advise government or large corporates on resilience.",
+      "education_ids": ["ed012"],
+      "skill_ids": ["sk029", "sk034", "sk035", "sk031", "sk026", "sk056", "sk013", "sk025", "sk014", "sk032"],
+      "specialization_ids": ["sp015"]
+    },
+    {
+      "id": "r018",
+      "career_id": "c018",
+      "description": "Phase 1 — Foundation (Years 1-3): Obtain BSc Biomedical Engineering (ed016). Learn medical device design (sk036), biomechanics (sk037) and CAD (sk026).\n\nPhase 2 — Design & Verification (Years 2-5): Build prototypes, run verification and validation, and engage with clinical teams. Understand regulatory pathways and documentation (sk056, sk036).\n\nPhase 3 — Clinical Integration (Years 5-9): Work with clinicians in trials, ensure device usability and clinical data collection. Master GCP basics (sk043) for trials.\n\nPhase 4 — Product Lead / R&D Manager (Years 9-12): Lead cross-functional product teams, manage suppliers and scale manufacturing processes with Lean principles.\n\nPhase 5 — Director of R&D / Device Entrepreneurship: Lead commercialisation, secure approvals, and scale global market entry strategies.",
+      "education_ids": ["ed016"],
+      "skill_ids": ["sk036", "sk037", "sk026", "sk056", "sk043", "sk031", "sk032", "sk054", "sk013", "sk019"],
+      "specialization_ids": ["sp020"]
+    },
+    {
+      "id": "r019",
+      "career_id": "c019",
+      "description": "Phase 1 — Education & Rotations (Years 1-4): Complete Bachelor of Nursing (ed005). Master Clinical Care (sk038), Patient Communication (sk039) and pharmacology basics (sk041).\n\nPhase 2 — Licensure & Competency (Years 2-5): Pass national exams, gain experience in med-surg units, and acquire ACLS/ALS certifications (sk040). Build EMR proficiency (sk053).\n\nPhase 3 — Specialty Exposure (Years 5-9): Rotate through specialties (ICU, ER, Pediatrics) and pursue professional certificates. Start clinical teaching basics (sk042).\n\nPhase 4 — Clinical Lead / Charge Nurse (Years 9-12): Lead shifts, manage staffing and quality improvement (sk057). Mentor new grads and coordinate multidisciplinary care.\n\nPhase 5 — Advanced Practice / Education: Consider NP training (ed006) or transition to education (c022) or nurse management roles.",
+      "education_ids": ["ed005", "ed006"],
+      "skill_ids": ["sk038", "sk039", "sk041", "sk040", "sk053", "sk042", "sk057", "sk016", "sk031", "sk020"],
+      "specialization_ids": []
+    },
+    {
+      "id": "r020",
+      "career_id": "c020",
+      "description": "Phase 1 — Experience Base (Years 1-5): Complete Bachelor of Nursing (ed005) and practice as an RN. Build strong assessment skills (sk038) and complete critical care rotations.\n\nPhase 2 — Advanced Education (Years 3-6): Enroll in Master of Nursing Practice (ed006). Master Advanced Life Support (sk040), Pharmacology (sk041) and Epidemiology basics (sk045).\n\nPhase 3 — Certification & Autonomy (Years 6-10): Obtain NP certification, begin autonomous practice, prescribing and panel management. Enhance clinical teaching (sk042).\n\nPhase 4 — Practice Leadership & Specialization (Years 10-15): Focus on a niche (pediatrics, family medicine — sp008), lead clinics and supervise students.\n\nPhase 5 — Executive / Clinical Director: Lead clinical programs, design care pathways and influence healthcare delivery strategy.",
+      "education_ids": ["ed006", "ed005"],
+      "skill_ids": ["sk038", "sk040", "sk041", "sk042", "sk045", "sk039", "sk020", "sk057", "sk031", "sk054"],
+      "specialization_ids": ["sp008"]
+    },
+    {
+      "id": "r021",
+      "career_id": "c021",
+      "description": "Phase 1 — RN Base (Years 1-3): Complete Bachelor of Nursing (ed005) and acquire initial bedside experience. Take basic critical care courses and ACLS (sk040).\n\nPhase 2 — Advanced Training (Years 2-5): Enroll in Postgraduate Diploma: Critical Care Nursing (ed013). Master haemodynamic monitoring and ventilator management. Strengthen clinical documentation (sk053).\n\nPhase 3 — Sub-Specialization (Years 5-9): Work in ICU, trauma or cardiac units and gain advanced certifications. Lead code teams and simulations.\n\nPhase 4 — Clinical Expert (Years 9-12): Become Clinical Nurse Specialist or unit lead, drive protocols and evidence-based change (sk057).\n\nPhase 5 — Education / Policy Influence: Move into training, OR lead critical care service development and policy for ICU standards.",
+      "education_ids": ["ed013", "ed005"],
+      "skill_ids": ["sk040", "sk038", "sk041", "sk053", "sk057", "sk016", "sk031", "sk015", "sk054", "sk020"],
+      "specialization_ids": ["sp016"]
+    },
+    {
+      "id": "r022",
+      "career_id": "c022",
+      "description": "Phase 1 — Clinical Base (Years 1-4): Gain RN experience (ed005), deliver bedside teaching and master clinical assessment (sk038). Begin pedagogic studies.\n\nPhase 2 — Formal Education Training (Years 3-6): Obtain MEd / Postgrad Diploma in Nursing Education (ed014). Learn curriculum design and assessment (sk042).\n\nPhase 3 — Lecturer / Clinical Educator (Years 5-9): Teach in academic or hospital settings, run OSCEs and develop simulation scenarios (sp017).\n\nPhase 4 — Program Director (Years 9-13): Manage curricula, accreditation and faculty development. Drive simulation-based education and interprofessional learning.\n\nPhase 5 — Dean / Academic Leader: Oversee schools of nursing, research agendas and national training standards.",
+      "education_ids": ["ed014", "ed005"],
+      "skill_ids": ["sk042", "sk016", "sk057", "sk039", "sk031", "sk053", "sk020", "sk056", "sk047", "sk048"],
+      "specialization_ids": ["sp017"]
+    },
+    {
+      "id": "r023",
+      "career_id": "c023",
+      "description": "Phase 1 — Pre-Clinical Training (Years 1-2): Obtain Diploma in Clinical Research (ed017) or life sciences degree. Learn GCP (sk043), epidemiology (sk045) and trial terminology.\n\nPhase 2 — Coordinator (Years 2-5): Run site-level trials: patient recruitment (sk046), informed consent and source data verification. Use data visualization (sk014) for site metrics.\n\nPhase 3 — Senior Coordinator / Manager (Years 5-9): Oversee multiple sites, manage budgets, liaise with sponsors and CROs. Master protocol development (sk044) and regulatory submissions.\n\nPhase 4 — Clinical Trial Manager (Years 9-12): Lead global trial operations, vendor management and complex therapeutic area coordination (sp021).\n\nPhase 5 — Head of Clinical Operations / Director: Run clinical programs, strategic pipeline planning and vendor partnerships. Lead regulatory interactions and product lifecycle planning.",
+      "education_ids": ["ed017"],
+      "skill_ids": ["sk043", "sk046", "sk014", "sk044", "sk045", "sk056", "sk031", "sk039", "sk020", "sk053"],
+      "specialization_ids": ["sp021"]
+    },
+    {
+      "id": "r024",
+      "career_id": "c024",
+      "description": "Phase 1 — RN Foundation (Years 1-3): Complete Bachelor of Nursing (ed005). Develop community health basics, epidemiology (sk045) and patient communication (sk039).\n\nPhase 2 — Field Practice (Years 2-5): Work in community clinics, design outreach / screening programs and run health promotion activities. Use data visualization for population health (sk014).\n\nPhase 3 — Program Development (Years 5-9): Design and evaluate public health programs, secure funding and manage stakeholders. Focus on policy, monitoring & evaluation.\n\nPhase 4 — Leadership (Years 9-12): Lead regional public health initiatives, coordinate emergency response and manage multi-disciplinary teams.\n\nPhase 5 — Public Health Director / Policy Advisor: Shape preventive health programmes, contribute to public health strategy, and advise government or NGOs on population-level interventions.",
+      "education_ids": ["ed005"],
+      "skill_ids": ["sk045", "sk039", "sk014", "sk031", "sk057", "sk020", "sk046", "sk034", "sk029", "sk048"],
+      "specialization_ids": ["sp009"]
     }
   ]
 }
+```

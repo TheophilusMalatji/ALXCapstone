@@ -16,6 +16,33 @@
 
 <script setup>
 import SidebarNav from '@/components/SidebarNav.vue'
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+
+const data = ref(null);
+const isLoading = ref(true);
+const error = ref(null);
+const fetchData = async () => {
+      try {
+        isLoading.value = true;
+        const response = await axios.get('http://localhost:8000/api/careers');
+        data.value = response.data;
+      } catch (err) {
+        error.value = err;
+      } finally {
+        isLoading.value = false;
+      }
+    };
+onMounted(() => {
+      fetchData();
+      return {
+      data,
+      isLoading,
+      error,
+      fetchData, // Optional: if you want to re-fetch data manually
+    };
+    });
+
 </script>
 
 <style>

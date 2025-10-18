@@ -36,6 +36,9 @@ class Introduction(TimestampedModel):
     """Detailed explanation or introduction for a career."""
     career = models.OneToOneField(Career, on_delete=models.CASCADE, related_name="introduction")
     content = models.TextField()
+    education_duration_years = models.IntegerField()
+    education_duration_months = models.IntegerField()
+
 
     def __str__(self):
         return f"Introduction for {self.career.name}"
@@ -81,6 +84,10 @@ class Specialization(TimestampedModel):
 
     def __str__(self):
         return f"{self.name} ({self.career.name})"
+    
+class Certification(models.Model):
+    name = models.CharField(max_length=200)
+    description = models.CharField(max_length=500, null=True)
 
 
 class Roadmap(TimestampedModel):
@@ -95,3 +102,63 @@ class Roadmap(TimestampedModel):
 
     def __str__(self):
         return f"Roadmap for {self.career.name}"
+    
+
+# In your models.py file
+
+# ... (existing TimestampedModel, Career, Roadmap definitions) ...
+
+class Phase(TimestampedModel):
+    """
+    Represents a named stage or step in a career roadmap,
+    directly linking to the required skills and education for that step.
+    """
+    roadmap = models.ForeignKey(
+        'Roadmap',
+        on_delete=models.CASCADE,
+        related_name="phases",
+        help_text="The career roadmap this phase belongs to."
+    )
+    name = models.CharField(
+        max_length=255,
+        help_text="The title of the phase (e.g., 'Phase 1: Academic Base')."
+    )
+    order = models.PositiveIntegerField(
+        help_text="The sequence in which the phase occurs in the roadmap."
+    )
+    description = models.TextField(blank=True,null=True,
+        help_text="Detailed description of the goals/actions in this specific phase."
+    )
+
+    # Direct Many-to-Many relationships as requested
+    required_education = models.ManyToManyField(
+        'Education', 
+        blank=True, 
+        related_name='phases_required', 
+        help_text="Educational paths specifically completed or started in this phase."
+    )
+    required_skills = models.ManyToManyField(
+        'Skill', 
+        blank=True, 
+        related_name='phases_required', 
+        help_text="Skills that must be acquired or mastered in this phase."
+    )
+    required_specializations = models.ManyToManyField(
+        'Specialization', 
+        blank=True, 
+        related_name='phases_required', 
+        help_text="Specializations that are typically achieved or started in this phase."
+    )
+    required_certifications = models.ManyToManyField(
+        'Certification', 
+        blank=True, 
+        related_name='phases_required', 
+        help_text="Professional certifications obtained in this phase."
+    )
+
+    class Meta:
+        unique_together = ('roadmap', 'order')
+        ordering = ['order']
+
+    def __str__(self):
+        return f"{self.name} for {self.roadmap.career.name}"

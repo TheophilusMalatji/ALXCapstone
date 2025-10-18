@@ -1,3 +1,4 @@
+<!-- views/HomeView.vue -->
 <template>
   <div
     class="flex flex-col flex-grow"
@@ -56,7 +57,7 @@
               stroke-linejoin="round"
               stroke-width="2"
               d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
+            />
           </svg>
         </router-link>
       </section>
@@ -163,23 +164,13 @@
         </div>
       </section>
     </main>
-
-    <!-- Footer -->
-   
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { onMounted } from 'vue'
-import { useApiData } from '@/hooks/useApiData'
 
-const { data: careers, fetchData } = useApiData()
-
-onMounted(async () => {
-  await fetchData('/careers?_limit=2') // get 2 random careers
-})
-
+// Reactive boolean for hover animation
 const hoverButton = ref(false)
 </script>
 

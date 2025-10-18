@@ -1,3 +1,4 @@
+<!--views/CareerListView.vue-->
 <template>
   <div
     class="flex flex-col flex-grow p-8 transition-all duration-300"
@@ -28,37 +29,62 @@
     }"
   >
     <div>
-      <!-- Title -->
+      <span
+        class="text-xs font-semibold px-2 py-0.5 rounded-full"
+        :style="{ backgroundColor: 'var(--accent-green)', color: 'var(--bg-color)' }"
+      >
+        {{ career.sector?.name || 'Uncategorized' }}
+      </span>
       <h3
-        class="text-2xl font-spacegrotesk font-bold mb-2"
+        class="text-2xl font-spacegrotesk font-bold mt-2 mb-2"
         :style="{ color: 'var(--accent-cyan)' }"
       >
         {{ career.name }}
       </h3>
+      <p class="text-sm opacity-70 mb-4 line-clamp-3">{{ career.overview }}</p>
 
-      <!-- Meta Info -->
-      <p class="opacity-80 text-sm mb-3">
-        {{ getSectorName(career.sector_id) }} • {{ career.duration_years }} years education
-      </p>
-
-      <!-- Overview -->
-      <p class="opacity-70 text-sm mb-4">{{ career.overview }}</p>
-
-      <!-- Salary -->
-      <p class="text-sm mb-4">
-        <strong :style="{ color: 'var(--accent-green)' }">
-          R{{ Number(career.average_salary || 0).toLocaleString() }}
-        </strong>
-        /year (average)
-      </p>
-
-      <!-- Outlook -->
-      <p class="text-xs opacity-70 italic mb-4">
-        {{ career.job_outlook }}
-      </p>
+      <!-- Salary / Outlook -->
+      <div class="flex flex-col space-y-1 text-sm mt-4">
+        <div class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4 mr-2"
+            :style="{ color: 'var(--accent-green)' }"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+          <span class="font-medium">Avg. Salary:</span> R{{ career.average_salary.toLocaleString() }}
+        </div>
+        <div class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4 mr-2"
+            :style="{ color: 'var(--accent-blue)' }"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m-6 0h6"
+            />
+          </svg>
+          <span class="font-medium">Job Outlook:</span> {{ career.job_outlook || 'N/A' }}
+        </div>
+      </div>
     </div>
-
-    <!-- View Details Button -->
+    
+    <!-- Link to Detail View -->
     <router-link
       :to="`/careers/${career.id}`"
       class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold transition-all duration-200"
@@ -84,46 +110,41 @@
 </section>
 
 
-
   
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useApiData } from '@/hooks/useApiData'
+import { getCareers } from '@/api/careerService'
 
-const { data, fetchData } = useApiData()
 const careers = ref([])
-const sectors = ref([])
+const loading = ref(true)
+const error = ref(null)
 
 const fetchCareers = async () => {
-  await fetchData('/careers')
-  careers.value = data.value || []
+  try {
+    loading.value = true
+    const response = await getCareers()
+    careers.value = response.data
+  } catch (err) {
+    error.value = err.response?.data?.detail || err.message
+    console.error('Error fetching careers:', err)
+  } finally {
+    loading.value = false
+  }
 }
 
-const fetchSectors = async () => {
-  await fetchData('/sectors')
-  sectors.value = data.value || []
-}
-
-const getSectorName = (id) => {
-  const sector = sectors.value.find(s => s.id === id)
-  return sector ? sector.name : 'Unknown Sector'
-}
-
-onMounted(async () => {
-  await fetchSectors()
-  await fetchCareers()
-})
-
+onMounted(fetchCareers)
 </script>
 
 
 <style scoped>
-/* Subtle card hover transitions */
-a:hover {
-  filter: brightness(1.1);
-  transition: all 0.3s ease;
+/* Scoped styles */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 </style>

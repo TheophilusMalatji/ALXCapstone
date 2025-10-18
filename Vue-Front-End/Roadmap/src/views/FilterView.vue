@@ -1,3 +1,4 @@
+<!--views/FilterView.vue-->
 <template>
   <div class="flex flex-col flex-grow p-8 space-y-10 transition-all duration-300"
        :style="{ backgroundColor: 'var(--card-color)', color: 'var(--text-color)' }">
@@ -20,67 +21,65 @@
 
         <!-- Education Duration -->
         <div class="flex flex-col space-y-2">
-          <label class="text-sm font-semibold">Maximum Study Duration (Years)</label>
-          <input type="range" min="1" max="8" v-model="tempFilters.duration" class="w-full accent-[var(--accent-blue)] cursor-pointer"/>
-          <span class="text-sm opacity-80">{{ tempFilters.duration }} years</span>
+          <label class="text-sm font-semibold">Maximum Study Duration (Years: {{ duration }})</label>
+          <input type="range" min="1" max="8" v-model.number="duration" class="w-full accent-[var(--accent-cyan)]" @change="applyFilters">
+          <p class="text-xs opacity-70">Find careers with an education roadmap up to {{ duration }} years.</p>
         </div>
 
-        <!-- Salary -->
+        <!-- Minimum Salary -->
         <div class="flex flex-col space-y-2">
-          <label class="text-sm font-semibold">Minimum Expected Salary (R)</label>
-          <input type="number" v-model="tempFilters.salary" placeholder="e.g. 50000"
-                 class="p-2 rounded border bg-transparent focus:outline-none"
-                 :style="{ borderColor: 'var(--accent-blue)', color: 'var(--text-color)' }"/>
+          <label class="text-sm font-semibold">Minimum Average Salary (R)</label>
+          <input type="number" placeholder="Enter minimum salary..." v-model="salary" class="p-2 rounded-lg border focus:ring-2"
+                 :style="{ borderColor: 'var(--accent-green)', backgroundColor: 'var(--card-color)', color: 'var(--text-color)', focusRing: 'var(--accent-green)' }"
+                 @input="applyFilters">
+          <p class="text-xs opacity-70">Filter careers by minimum average salary.</p>
         </div>
 
-        <!-- Sector -->
+        <!-- Sector Filter -->
         <div class="flex flex-col space-y-2">
-          <label class="text-sm font-semibold">Sector</label>
-          <select v-model="tempFilters.sector" class="p-2 rounded border focus:outline-none transition-all duration-200"
-                  :style="{ borderColor: 'var(--accent-blue)', backgroundColor: isDark ? '#0D1117' : '#ffffff', color: isDark ? '#ffffff' : '#000000' }">
-            <option disabled value="">Select sector</option>
-            <option v-for="sector in sectors" :key="sector.id" :value="sector.id">
-              {{ sector.name }}
-            </option>
+          <label class="text-sm font-semibold">Filter by Sector</label>
+          <select v-model="sector" class="p-2 rounded-lg border focus:ring-2"
+                  :style="{ borderColor: 'var(--accent-blue)', backgroundColor: 'var(--card-color)', color: 'var(--text-color)', focusRing: 'var(--accent-blue)' }"
+                  @change="applyFilters">
+            <option value="">All Sectors</option>
+            <option v-for="s in sectors" :key="s.id" :value="s.id">{{ s.name }}</option>
           </select>
+          <p class="text-xs opacity-70">Select a specific sector to focus your search.</p>
         </div>
-      </div>
-
-      <!-- Buttons -->
-      <div class="flex justify-center mt-8 space-x-6">
-        <button @click="applyFilters"
-                class="px-6 py-3 rounded-full font-semibold transition-all duration-300"
-                :style="{ backgroundColor: 'var(--accent-green)', color: 'var(--bg-color)', boxShadow: '0 0 10px var(--accent-green)' }">
-          Apply Filters
-        </button>
-        <button @click="resetFilters"
-                class="px-6 py-3 rounded-full font-semibold border transition-all duration-300"
-                :style="{ color: 'var(--accent-cyan)', borderColor: 'var(--accent-cyan)' }">
-          Reset
-        </button>
       </div>
     </section>
 
-    <!-- Results -->
+    <!-- Filtered Results -->
     <section class="max-w-6xl mx-auto w-full">
-      <h2 class="text-2xl font-spacegrotesk font-semibold mb-6 border-b pb-3"
-          :style="{ color: 'var(--accent-blue)', borderColor: 'var(--accent-blue)' }">
-        Matching Career Profiles
+      <h2 class="text-2xl font-spacegrotesk font-bold mb-4">
+        Showing {{ filtered.length }} {{ filtered.length === 1 ? 'Career' : 'Careers' }}
       </h2>
-
-      <div v-if="filtered.length === 0" class="text-center text-sm opacity-70">
-        No matching careers found. Try adjusting your filters.
-      </div>
-
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <router-link v-for="career in filtered" :key="career.id" :to="`/careers/${career.id}`"
-                     class="p-6 rounded-xl border shadow-md hover:scale-[1.02] transition-all duration-200"
-                     :style="{ backgroundColor: 'var(--bg-color)', borderColor: 'var(--accent-blue)' }">
-          <h3 class="text-xl font-spacegrotesk font-bold mb-2" :style="{ color: 'var(--accent-cyan)' }">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <router-link
+          v-for="career in filtered"
+          :key="career.id"
+          :to="`/careers/${career.id}`"
+          class="p-4 rounded-xl border shadow-md transition-all duration-200 hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between"
+          :style="{
+            backgroundColor: 'var(--bg-color)',
+            borderColor: 'var(--accent-green)',
+            color: 'var(--text-color)'
+          }"
+        >
+          <span
+            class="text-xs font-semibold px-2 py-0.5 rounded-full self-start"
+            :style="{ backgroundColor: 'var(--accent-blue)', color: 'var(--bg-color)' }"
+          >
+            {{ career.sector?.name || 'N/A' }}
+          </span>
+          <h3 class="text-xl font-spacegrotesk font-bold mt-2 mb-1" :style="{ color: 'var(--accent-cyan)' }">
             {{ career.name }}
           </h3>
-          <p class="opacity-80 text-sm mb-4">{{ career.sector?.name }} • {{ career.duration_years }} years</p>
-          <p class="opacity-70 text-sm">Est. Salary: R{{ career.average_salary.toLocaleString() }}</p>
+          <p class="text-sm opacity-70 line-clamp-2">{{ career.overview }}</p>
+          <p class="mt-2 text-sm">Est. Salary: R{{ career.average_salary ? career.average_salary.toLocaleString() : 'N/A' }}</p>
+          <p class="text-xs opacity-80 mt-1">
+            Duration: {{ career.introduction?.education_duration_years || '?' }} Years
+          </p>
         </router-link>
       </div>
     </section>
@@ -89,59 +88,50 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { getCareers } from '@/api/careerService'
+import { getSectors } from '@/api/sectorService'
 
-const careers = ref([])
 const sectors = ref([])
-
-// Active filters applied on click
-const filters = ref({
-  sector: '',
-  duration: 8,
-  salary: 0
-})
-
-// Temporary values that user edits before applying
-const tempFilters = ref({ ...filters.value })
-
+const careers = ref([])
 const filtered = ref([])
-const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 
-onMounted(async () => {
-  const careersData = await fetch('http://localhost:2500/careers').then(r => r.json())
-  const sectorData = await fetch('http://localhost:2500/sectors').then(r => r.json())
+const duration = ref(8)
+const salary = ref('')
+const sector = ref('')
 
-  careers.value = careersData.map(c => ({
-    ...c,
-    sector: sectorData.find(s => s.id === c.sector_id)
-  }))
-
-  sectors.value = sectorData
-  filtered.value = careers.value // Show all by default
-})
+const fetchAllData = async () => {
+  try {
+    const [careersRes, sectorsRes] = await Promise.all([
+      getCareers(),
+      getSectors()
+    ])
+    careers.value = careersRes.data
+    sectors.value = sectorsRes.data
+    applyFilters()
+  } catch (err) {
+    console.error('API Fetch Error:', err.response?.data || err.message)
+  }
+}
 
 function applyFilters() {
-  filtered.value = careers.value.filter(c => {
-    const matchSector = tempFilters.value.sector ? c.sector?.id === tempFilters.value.sector : true
-    const matchDuration = c.duration_years <= tempFilters.value.duration
-    const matchSalary = c.average_salary >= tempFilters.value.salary
-    return matchSector && matchDuration && matchSalary
+  filtered.value = careers.value.filter(career => {
+    const durationOk = (career.introduction?.education_duration_years || 99) <= duration.value
+    const salaryOk = !salary.value || Number(career.average_salary) >= Number(salary.value)
+    const sectorOk = !sector.value || career.sector?.id === sector.value
+    return durationOk && salaryOk && sectorOk
   })
-
-  // Commit temp to active
-  filters.value = { ...tempFilters.value }
 }
 
-function resetFilters() {
-  filters.value = { sector: '', duration: 8, salary: 0 }
-  tempFilters.value = { ...filters.value }
-  filtered.value = careers.value
-}
+onMounted(fetchAllData)
 </script>
 
+
 <style scoped>
-select,
-input[type='number'],
-input[type='range'] {
-  outline: none;
+/* Added line clamp utility for cleaner cards */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 </style>

@@ -8,12 +8,17 @@ from .views import (
     ResponsibilityViewSet,
     SpecializationViewSet,
     RoadmapViewSet,
+    CareerDetailViewSet # New ViewSet
 )
 
 router = DefaultRouter()
 
+# Core Endpoints
 router.register(r'sectors', SectorViewSet)
-router.register(r'careers', CareerViewSet)
+router.register(r'careers', CareerViewSet) # Use this for list and single detailed retrieval
+router.register(r'career-details', CareerDetailViewSet, basename='career-detail') # Alternative detailed endpoint
+
+# Individual/Auxiliary Endpoints (less common frontend calls now)
 router.register(r'introductions', IntroductionViewSet)
 router.register(r'education', EducationViewSet)
 router.register(r'skills', SkillViewSet)
